@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="e56605080fcbfe507409c9c530d1b2e6" extends="task" label="Task_decision" max_length="40" name="x_846092_decisio_0_task_decision" type="collection">
+        <element choice="1" label="Applicant role" max_length="40" name="u_applicant_role" type="choice">
+            <choice/>
+        </element>
+        <element default="javascript:gs.getUser().getDepartmentID()" label="Original dept" max_length="32" name="u_original_dept" reference="sys_user" type="reference"/>
+        <element choice="1" label="amount" mandatory="true" max_length="40" name="amount" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="50万未満" value="a"/>
+                <element inactive_on_update="false" label="50万未満" language="ja" value="a"/>
+                <element inactive_on_update="false" label="50万以上" value="b"/>
+                <element inactive_on_update="false" label="50万以上" language="ja" value="b"/>
+            </choice>
+        </element>
+        <element label="Department" max_length="32" name="u_department" reference="cmn_department" type="reference"/>
+        <element label="L1 approver" max_length="32" name="u_l1_approver" read_only="true" reference="sys_user" type="reference"/>
+        <element label="L2 approver group" max_length="32" name="u_l2_approver_group" reference="sys_user_group" type="reference"/>
+        <element label="memo" max_length="4000" name="memo" type="string"/>
+    </element>
+</database>

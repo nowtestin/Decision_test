@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="609b6b600fcf36907409c9c530d1b224" label="user_department" max_length="40" name="x_846092_decisio_0_user_department" type="collection">
+        <element label="Manage orgcd" max_length="20" name="manage_orgcd" type="string"/>
+        <element label="User ID" max_length="32" name="user_id" reference="sys_user" type="reference"/>
+        <element label="Job cd" max_length="10" name="job_cd" type="string"/>
+        <element label="manage" max_length="32" name="manage" reference="sys_user" type="reference"/>
+        <element label="department" max_length="32" name="department" reference="cmn_department" type="reference"/>
+        <element label="Org cd" max_length="20" name="org_cd" type="string"/>
+        <index name="index">
+            <element name="department"/>
+        </index>
+        <index name="index2">
+            <element name="manage"/>
+        </index>
+        <index name="index3">
+            <element name="user_id"/>
+        </index>
+    </element>
+</database>

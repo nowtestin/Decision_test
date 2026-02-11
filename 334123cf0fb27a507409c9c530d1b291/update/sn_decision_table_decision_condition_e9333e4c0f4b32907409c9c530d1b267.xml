@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition">
+    <sn_decision_table_decision_condition action="INSERT_OR_UPDATE">
+        <decision_input display_value="amount">c9333e800f4b32907409c9c530d1b2f5</decision_input>
+        <decision_table display_value="decision_rule">25fdde040f0732907409c9c530d1b2c9</decision_table>
+        <default_operator>=</default_operator>
+        <description>金額は50万以上</description>
+        <field/>
+        <field_label/>
+        <field_parent_table/>
+        <label>金額</label>
+        <order>100</order>
+        <parent/>
+        <reference/>
+        <sys_class_name>sn_decision_table_decision_condition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-09 09:12:30</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>e9333e4c0f4b32907409c9c530d1b267</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sn_decision_table_decision_condition_e9333e4c0f4b32907409c9c530d1b267</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-09 09:12:30</sys_updated_on>
+        <type display_value="Choice">5217a7c1bf3320001875647fcf0739b7</type>
+    </sn_decision_table_decision_condition>
+</record_update>

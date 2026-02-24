@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="u_amount" table="x_846092_decisio_0_task_decision_nn">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_decision_multi_result_element">
+    <sys_decision_multi_result_element action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -10,11 +10,11 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>1</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>u_amount</column_label>
-        <comments/>
+        <column_label>approval_rote</column_label>
+        <comments>承認ルート</comments>
         <create_roles/>
         <default_value/>
         <defaultsort/>
@@ -26,17 +26,25 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>u_amount</element>
+        <element>u_approval_rote</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="Choice">choice</internal_type>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>approval_rote</label>
         <mandatory>false</mandatory>
-        <max_length>40</max_length>
-        <name>x_846092_decisio_0_task_decision_nn</name>
+        <max_length>4000</max_length>
+        <model display_value="decision_rule_v2">44d1a8fc0f4776907409c9c530d1b28c</model>
+        <model_id>44d1a8fc0f4776907409c9c530d1b28c</model_id>
+        <model_table/>
+        <name>var__m_sys_decision_multi_result_element_44d1a8fc0f4776907409c9c530d1b28c</name>
         <next_element/>
+        <order>100</order>
+        <parent/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -49,16 +57,17 @@
         <reference_type/>
         <spell_check>false</spell_check>
         <staged>false</staged>
-        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_class_name>sys_decision_multi_result_element</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-02-11 03:49:17</sys_created_on>
-        <sys_name>u_amount</sys_name>
+        <sys_created_on>2026-02-11 07:59:16</sys_created_on>
+        <sys_id>eca5b0f40f0b76907409c9c530d1b2de</sys_id>
+        <sys_name>approval_rote</sys_name>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
         <sys_policy/>
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
-        <sys_update_name>sys_dictionary_x_846092_decisio_0_task_decision_nn_u_amount</sys_update_name>
+        <sys_update_name>sys_decision_multi_result_element_eca5b0f40f0b76907409c9c530d1b2de</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-02-11 06:39:52</sys_updated_on>
+        <sys_updated_on>2026-02-11 07:59:16</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -70,5 +79,5 @@
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
-    </sys_dictionary>
+    </sys_decision_multi_result_element>
 </record_update>

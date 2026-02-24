@@ -27,7 +27,7 @@
         <global>false</global>
         <help_tag>More information</help_tag>
         <help_text/>
-        <hidden>true</hidden>
+        <hidden>false</hidden>
         <include_none>false</include_none>
         <instructions/>
         <layout>normal</layout>
@@ -45,14 +45,14 @@
         <map_to_field>false</map_to_field>
         <mask_use_confirmation>false</mask_use_confirmation>
         <mask_use_encryption>false</mask_use_encryption>
-        <name>org_cd</name>
+        <name>formatter</name>
         <not_available_conversation>false</not_available_conversation>
-        <order>30</order>
+        <order>52</order>
         <post_insert_script/>
         <price_if_checked>0</price_if_checked>
         <pricing_implications>false</pricing_implications>
         <published_ref/>
-        <question_text>所属部門_ORGCD</question_text>
+        <question_text/>
         <read_only>false</read_only>
         <read_roles/>
         <read_script/>
@@ -80,20 +80,20 @@
         <summary_macro/>
         <sys_class_name>item_option_new</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-02-11 05:59:48</sys_created_on>
-        <sys_id>1bf958fc0f0776907409c9c530d1b206</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_name>所属部門_ORGCD</sys_name>
+        <sys_created_on>2026-02-11 06:44:09</sys_created_on>
+        <sys_id>986460740f8776907409c9c530d1b2ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>formatter</sys_name>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
         <sys_policy/>
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
-        <sys_update_name>item_option_new_1bf958fc0f0776907409c9c530d1b206</sys_update_name>
+        <sys_update_name>item_option_new_986460740f8776907409c9c530d1b2ab</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-02-11 06:43:24</sys_updated_on>
+        <sys_updated_on>2026-02-11 06:44:09</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
-        <type>6</type>
+        <type>12</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>
@@ -109,22 +109,22 @@
         <visible_summary>true</visible_summary>
         <write_roles/>
     </item_option_new>
-    <sys_translated_text action="delete_multiple" query="documentkey=1bf958fc0f0776907409c9c530d1b206"/>
-    <fx_price action="delete_multiple" query="id=1bf958fc0f0776907409c9c530d1b206"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=986460740f8776907409c9c530d1b2ab"/>
+    <fx_price action="delete_multiple" query="id=986460740f8776907409c9c530d1b2ab"/>
     <fx_price action="INSERT_OR_UPDATE">
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>price_if_checked</field>
-        <id>1bf958fc0f0776907409c9c530d1b206</id>
+        <id>986460740f8776907409c9c530d1b2ab</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-02-11 05:59:48</sys_created_on>
-        <sys_id>224ad0300f4776907409c9c530d1b2a5</sys_id>
+        <sys_created_on>2026-02-11 06:44:09</sys_created_on>
+        <sys_id>007424740f8776907409c9c530d1b283</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-02-11 05:59:48</sys_updated_on>
+        <sys_updated_on>2026-02-11 06:44:09</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>
@@ -132,16 +132,16 @@
         <amount>0</amount>
         <currency display_value="USD">USD</currency>
         <field>rec_price_if_checked</field>
-        <id>1bf958fc0f0776907409c9c530d1b206</id>
+        <id>986460740f8776907409c9c530d1b2ab</id>
         <parent/>
         <reference_amount>0</reference_amount>
         <reference_currency display_value="USD">USD</reference_currency>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-02-11 05:59:48</sys_created_on>
-        <sys_id>ee4a90300f4776907409c9c530d1b279</sys_id>
+        <sys_created_on>2026-02-11 06:44:09</sys_created_on>
+        <sys_id>c47424740f8776907409c9c530d1b282</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-02-11 05:59:48</sys_updated_on>
+        <sys_updated_on>2026-02-11 06:44:09</sys_updated_on>
         <table>item_option_new</table>
         <type>calculated</type>
     </fx_price>

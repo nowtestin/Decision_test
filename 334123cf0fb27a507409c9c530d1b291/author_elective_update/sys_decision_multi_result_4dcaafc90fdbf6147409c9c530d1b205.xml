@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="DELETE">
+        <decision_table display_value="decision_rule_v3">5a9c0c0d0f13b6147409c9c530d1b22a</decision_table>
+        <label>承認パターン_Result部分: B, マネージャ: Abel Tuter, buchou: Abraham Lincoln, Step2-1承認者: Bart Hachey</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 02:04:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>4dcaafc90fdbf6147409c9c530d1b205</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>承認パターン_Result部分: B, マネージャ: Abel Tuter, buchou: Abraham Lincoln, Step2-1承認者: Bart Hachey</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sys_decision_multi_result_4dcaafc90fdbf6147409c9c530d1b205</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 02:04:50</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="DELETE" query="document_key=4dcaafc90fdbf6147409c9c530d1b205"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>4dcaafc90fdbf6147409c9c530d1b205</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 02:04:50</sys_created_on>
+        <sys_id>05caafc90fdbf6147409c9c530d1b206</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 02:04:50</sys_updated_on>
+        <value>b</value>
+        <variable display_value="承認パターン_Result部分">14caaf490fdbf6147409c9c530d1b267</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>4dcaafc90fdbf6147409c9c530d1b205</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 02:04:50</sys_created_on>
+        <sys_id>49caafc90fdbf6147409c9c530d1b206</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 02:04:50</sys_updated_on>
+        <value>ee826bf03710200044e0bfc8bcbe5def</value>
+        <variable display_value="Step2-1承認者">8f9c00cd0f13b6147409c9c530d1b27f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>4dcaafc90fdbf6147409c9c530d1b205</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 02:04:50</sys_created_on>
+        <sys_id>8dcaafc90fdbf6147409c9c530d1b206</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 02:04:50</sys_updated_on>
+        <value>62826bf03710200044e0bfc8bcbe5df1</value>
+        <variable display_value="マネージャ">0f9c00cd0f13b6147409c9c530d1b29f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>4dcaafc90fdbf6147409c9c530d1b205</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 02:04:50</sys_created_on>
+        <sys_id>c1caafc90fdbf6147409c9c530d1b207</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 02:04:50</sys_updated_on>
+        <value>a8f98bb0eb32010045e1a5115206fe3a</value>
+        <variable display_value="buchou">4dcdc4410f53b6147409c9c530d1b2b7</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</application>
+        <file_path/>
+        <instance_id>2c290e98ebd3ae549698ff72dad0cd48</instance_id>
+        <instance_name>dev354504</instance_name>
+        <name>sys_decision_multi_result_4dcaafc90fdbf6147409c9c530d1b205</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result"><sys_decision_multi_result action="INSERT_OR_UPDATE"><decision_table display_value="decision_rule_v3">5a9c0c0d0f13b6147409c9c530d1b22a</decision_table><label>承認パターン_Result部分: B, マネージャ: Abel Tuter, buchou: Abraham Lincoln, Step2-1承認者: Bart Hachey</label><result_elements/><sys_class_name>sys_decision_multi_result</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 02:04:50</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>4dcaafc90fdbf6147409c9c530d1b205</sys_id><sys_mod_count>0</sys_mod_count><sys_name>承認パターン_Result部分: B, マネージャ: Abel Tuter, buchou: Abraham Lincoln, Step2-1承認者: Bart Hachey</sys_name><sys_overrides/><sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package><sys_policy/><sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope><sys_update_name>sys_decision_multi_result_4dcaafc90fdbf6147409c9c530d1b205</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 02:04:50</sys_updated_on></sys_decision_multi_result><sys_variable_value action="delete_multiple" query="document_key=4dcaafc90fdbf6147409c9c530d1b205"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>4dcaafc90fdbf6147409c9c530d1b205</document_key><order>50</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 02:04:50</sys_created_on><sys_id>05caafc90fdbf6147409c9c530d1b206</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 02:04:50</sys_updated_on><value>b</value><variable display_value="承認パターン_Result部分">14caaf490fdbf6147409c9c530d1b267</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>4dcaafc90fdbf6147409c9c530d1b205</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 02:04:50</sys_created_on><sys_id>49caafc90fdbf6147409c9c530d1b206</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 02:04:50</sys_updated_on><value>ee826bf03710200044e0bfc8bcbe5def</value><variable display_value="Step2-1承認者">8f9c00cd0f13b6147409c9c530d1b27f</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>4dcaafc90fdbf6147409c9c530d1b205</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 02:04:50</sys_created_on><sys_id>8dcaafc90fdbf6147409c9c530d1b206</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 02:04:50</sys_updated_on><value>62826bf03710200044e0bfc8bcbe5df1</value><variable display_value="マネージャ">0f9c00cd0f13b6147409c9c530d1b29f</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>4dcaafc90fdbf6147409c9c530d1b205</document_key><order>150</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 02:04:50</sys_created_on><sys_id>c1caafc90fdbf6147409c9c530d1b207</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 02:04:50</sys_updated_on><value>a8f98bb0eb32010045e1a5115206fe3a</value><variable display_value="buchou">4dcdc4410f53b6147409c9c530d1b2b7</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>925867511</payload_hash>
+        <record_name>承認パターン_Result部分: B, マネージャ: Abel Tuter, buchou: Abraham Lincoln, Step2-1承認者: Bart Hachey</record_name>
+        <reverted_from/>
+        <source>36a573ec0fcf36907409c9c530d1b254</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 02:04:50</sys_created_on>
+        <sys_id>05caafc90fdbf6147409c9c530d1b20a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c928ab7940000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 02:04:50</sys_updated_on>
+        <type>Decision Table Multiple Result</type>
+        <update_guid>c1caafc9f4dbf61407f0feb352210709</update_guid>
+        <update_guid_history>c1caafc9f4dbf61407f0feb352210709:925867511</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:32:03</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_multi_result">sys_decision_multi_result</sys_db_object>
+        <sys_id>309416f776f54537962c00a8e0309bb9</sys_id>
+        <sys_metadata>4dcaafc90fdbf6147409c9c530d1b205</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>承認パターン_Result部分: B, マネージャ: Abel Tuter, buchou: Abraham Lincoln, Step2-1承認者: Bart Hachey</sys_name>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_scope_delete display_value="">b26603257afd472c9f81ad439a022e90</sys_scope_delete>
+        <sys_update_name>sys_decision_multi_result_4dcaafc90fdbf6147409c9c530d1b205</sys_update_name>
+        <sys_update_version display_value="sys_decision_multi_result_4dcaafc90fdbf6147409c9c530d1b205">05caafc90fdbf6147409c9c530d1b20a</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:32:03</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

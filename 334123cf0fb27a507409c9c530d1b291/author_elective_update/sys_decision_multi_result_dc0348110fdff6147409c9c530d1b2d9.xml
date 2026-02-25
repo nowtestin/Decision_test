@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="DELETE">
+        <decision_table display_value="decision_rule_v3 delta">a0a2cc1d0f9ff6147409c9c530d1b226</decision_table>
+        <label>承認パターン_Result部分: A, マネージャ: Abel Tuter, buchou: Barbara Hindley, 版数_results: Ver1</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:50:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dc0348110fdff6147409c9c530d1b2d9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>承認パターン_Result部分: A, マネージャ: Abel Tuter, buchou: Barbara Hindley, 版数_results: Ver1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sys_decision_multi_result_dc0348110fdff6147409c9c530d1b2d9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:50:44</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="DELETE" query="document_key=dc0348110fdff6147409c9c530d1b2d9"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>dc0348110fdff6147409c9c530d1b2d9</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:50:44</sys_created_on>
+        <sys_id>100348110fdff6147409c9c530d1b2dc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:50:44</sys_updated_on>
+        <value>Ver1</value>
+        <variable display_value="版数_results">4c0348110fdff6147409c9c530d1b27b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>dc0348110fdff6147409c9c530d1b2d9</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:50:44</sys_created_on>
+        <sys_id>1c0348110fdff6147409c9c530d1b2da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:50:44</sys_updated_on>
+        <value>A</value>
+        <variable display_value="承認パターン_Result部分">55a24cdd0f9ff6147409c9c530d1b297</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>dc0348110fdff6147409c9c530d1b2d9</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:50:44</sys_created_on>
+        <sys_id>500348110fdff6147409c9c530d1b2db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:50:44</sys_updated_on>
+        <value/>
+        <variable display_value="Step2-1承認者">31a28cdd0f9ff6147409c9c530d1b24c</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>dc0348110fdff6147409c9c530d1b2d9</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:50:44</sys_created_on>
+        <sys_id>940348110fdff6147409c9c530d1b2db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:50:44</sys_updated_on>
+        <value>62826bf03710200044e0bfc8bcbe5df1</value>
+        <variable display_value="マネージャ">61a24cdd0f9ff6147409c9c530d1b2c2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>dc0348110fdff6147409c9c530d1b2d9</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:50:44</sys_created_on>
+        <sys_id>d80348110fdff6147409c9c530d1b2db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:50:44</sys_updated_on>
+        <value>d2826bf03710200044e0bfc8bcbe5dc9</value>
+        <variable display_value="buchou">e5a24cdd0f9ff6147409c9c530d1b2fa</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</application>
+        <file_path/>
+        <instance_id>2c290e98ebd3ae549698ff72dad0cd48</instance_id>
+        <instance_name>dev354504</instance_name>
+        <name>sys_decision_multi_result_dc0348110fdff6147409c9c530d1b2d9</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result"><sys_decision_multi_result action="INSERT_OR_UPDATE"><decision_table display_value="decision_rule_v3 delta">a0a2cc1d0f9ff6147409c9c530d1b226</decision_table><label>承認パターン_Result部分: A, マネージャ: Abel Tuter, buchou: Barbara Hindley, 版数_results: Ver1</label><result_elements/><sys_class_name>sys_decision_multi_result</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 03:50:44</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>dc0348110fdff6147409c9c530d1b2d9</sys_id><sys_mod_count>0</sys_mod_count><sys_name>承認パターン_Result部分: A, マネージャ: Abel Tuter, buchou: Barbara Hindley, 版数_results: Ver1</sys_name><sys_overrides/><sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package><sys_policy/><sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope><sys_update_name>sys_decision_multi_result_dc0348110fdff6147409c9c530d1b2d9</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 03:50:44</sys_updated_on></sys_decision_multi_result><sys_variable_value action="delete_multiple" query="document_key=dc0348110fdff6147409c9c530d1b2d9"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>dc0348110fdff6147409c9c530d1b2d9</document_key><order>25</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 03:50:44</sys_created_on><sys_id>100348110fdff6147409c9c530d1b2dc</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 03:50:44</sys_updated_on><value>Ver1</value><variable display_value="版数_results">4c0348110fdff6147409c9c530d1b27b</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>dc0348110fdff6147409c9c530d1b2d9</document_key><order>50</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 03:50:44</sys_created_on><sys_id>1c0348110fdff6147409c9c530d1b2da</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 03:50:44</sys_updated_on><value>A</value><variable display_value="承認パターン_Result部分">55a24cdd0f9ff6147409c9c530d1b297</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>dc0348110fdff6147409c9c530d1b2d9</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 03:50:44</sys_created_on><sys_id>500348110fdff6147409c9c530d1b2db</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 03:50:44</sys_updated_on><value/><variable display_value="Step2-1承認者">31a28cdd0f9ff6147409c9c530d1b24c</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>dc0348110fdff6147409c9c530d1b2d9</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 03:50:44</sys_created_on><sys_id>940348110fdff6147409c9c530d1b2db</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 03:50:44</sys_updated_on><value>62826bf03710200044e0bfc8bcbe5df1</value><variable display_value="マネージャ">61a24cdd0f9ff6147409c9c530d1b2c2</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>dc0348110fdff6147409c9c530d1b2d9</document_key><order>150</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 03:50:44</sys_created_on><sys_id>d80348110fdff6147409c9c530d1b2db</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 03:50:44</sys_updated_on><value>d2826bf03710200044e0bfc8bcbe5dc9</value><variable display_value="buchou">e5a24cdd0f9ff6147409c9c530d1b2fa</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-146471994</payload_hash>
+        <record_name>承認パターン_Result部分: A, マネージャ: Abel Tuter, buchou: Barbara Hindley, 版数_results: Ver1</record_name>
+        <reverted_from/>
+        <source>36a573ec0fcf36907409c9c530d1b254</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:50:44</sys_created_on>
+        <sys_id>940348110fdff6147409c9c530d1b2e0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c92ebac0e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:50:44</sys_updated_on>
+        <type>Decision Table Multiple Result</type>
+        <update_guid>5403481109dff614528f7b53d92184df</update_guid>
+        <update_guid_history>5403481109dff614528f7b53d92184df:-146471994</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:53:22</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_multi_result">sys_decision_multi_result</sys_db_object>
+        <sys_id>23d1e8a3e34a492a8d13243ba6d92be4</sys_id>
+        <sys_metadata>dc0348110fdff6147409c9c530d1b2d9</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>承認パターン_Result部分: A, マネージャ: Abel Tuter, buchou: Barbara Hindley, 版数_results: Ver1</sys_name>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_scope_delete display_value="">b26603257afd472c9f81ad439a022e90</sys_scope_delete>
+        <sys_update_name>sys_decision_multi_result_dc0348110fdff6147409c9c530d1b2d9</sys_update_name>
+        <sys_update_version display_value="sys_decision_multi_result_dc0348110fdff6147409c9c530d1b2d9">940348110fdff6147409c9c530d1b2e0</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:53:22</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

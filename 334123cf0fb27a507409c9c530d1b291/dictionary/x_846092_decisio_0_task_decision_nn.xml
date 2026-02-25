@@ -10,6 +10,7 @@
                 <element inactive_on_update="false" label="20万円未満" value="a"/>
             </choice>
         </element>
+        <element label="Version" max_length="40" name="u_version" type="string"/>
         <element label="u_memo" max_length="400" name="u_memo" type="string"/>
         <element choice="1" label="u_jobcd" max_length="32" name="u_jobcd" type="choice">
             <choice/>
@@ -20,5 +21,6 @@
         </element>
         <element label="u_manage" max_length="32" name="u_manage" reference="sys_user" type="glide_list"/>
         <element label="u_bucho" max_length="32" name="u_bucho" reference="sys_user" type="glide_list"/>
+        <element label="Sinseibi" max_length="100" name="u_sinseibi" type="glide_date"/>
     </element>
 </database>

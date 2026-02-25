@@ -31,7 +31,7 @@
         <mobile_picture/>
         <mobile_picture_type>use_desktop_picture</mobile_picture_type>
         <model/>
-        <name>Decisionで承認者を設定_v2</name>
+        <name>Decisionで承認者を設定_v3</name>
         <no_attachment_v2>false</no_attachment_v2>
         <no_cart>false</no_cart>
         <no_cart_v2>false</no_cart_v2>
@@ -92,14 +92,14 @@ current.u_department = producer.u_department; //V application department更新]]
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-02-11 05:23:11</sys_created_on>
         <sys_id>03bd7fa40f4376907409c9c530d1b240</sys_id>
-        <sys_mod_count>24</sys_mod_count>
-        <sys_name>Decisionで承認者を設定_v2</sys_name>
+        <sys_mod_count>27</sys_mod_count>
+        <sys_name>Decisionで承認者を設定_v3</sys_name>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
         <sys_policy/>
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>sc_cat_item_producer_03bd7fa40f4376907409c9c530d1b240</sys_update_name>
         <sys_updated_by>system</sys_updated_by>
-        <sys_updated_on>2026-02-12 02:56:00</sys_updated_on>
+        <sys_updated_on>2026-02-25 03:20:19</sys_updated_on>
         <table_name>x_846092_decisio_0_task_decision_nn</table_name>
         <taxonomy_topic display_value="Network">0554d3a7c3053010069aec4b7d40ddd3</taxonomy_topic>
         <template/>
@@ -107,7 +107,7 @@ current.u_department = producer.u_department; //V application department更新]]
         <type>item</type>
         <use_sc_layout>true</use_sc_layout>
         <vendor/>
-        <version>24</version>
+        <version>27</version>
         <view/>
         <visible_bundle>true</visible_bundle>
         <visible_guide>true</visible_guide>

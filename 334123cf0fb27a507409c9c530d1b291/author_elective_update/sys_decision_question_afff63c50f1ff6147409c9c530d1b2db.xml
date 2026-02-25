@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
+    <sys_decision_question action="DELETE">
+        <active>true</active>
+        <answer>2241c81d0f9ff6147409c9c530d1b2b2</answer>
+        <condition table="var__m_sys_decision_input_5a9c0c0d0f13b6147409c9c530d1b22a">u_status=true^u_amount=a^u_effective_start&gt;=javascript:gs.dateGenerate('2026-02-01','end')^u_effective_end&lt;=javascript:gs.dateGenerate('2027-02-25','start')^EQ<item display_value="True" endquery="false" field="u_status" goto="false" newquery="false" operator="=" or="false" value="true"/>
+            <item display_value="20万円未満" endquery="false" field="u_amount" goto="false" newquery="false" operator="=" or="false" value="a"/>
+            <item endquery="false" field="u_effective_start" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.dateGenerate('2026-02-01','end')"/>
+            <item endquery="false" field="u_effective_end" goto="false" newquery="false" operator="&lt;=" or="false" value="javascript:gs.dateGenerate('2027-02-25','start')"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <decision_table display_value="decision_rule_v3">5a9c0c0d0f13b6147409c9c530d1b22a</decision_table>
+        <default_answer>false</default_answer>
+        <input_table>var__m_sys_decision_input_5a9c0c0d0f13b6147409c9c530d1b22a</input_table>
+        <label>decision_rule_v3_300</label>
+        <marked_for_deletion>true</marked_for_deletion>
+        <order>300</order>
+        <sys_class_name>sys_decision_question</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 02:27:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>afff63c50f1ff6147409c9c530d1b2db</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>decision_rule_v3_300</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sys_decision_question_afff63c50f1ff6147409c9c530d1b2db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 07:02:29</sys_updated_on>
+    </sys_decision_question>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</application>
+        <file_path/>
+        <instance_id>2c290e98ebd3ae549698ff72dad0cd48</instance_id>
+        <instance_name>dev354504</instance_name>
+        <name>sys_decision_question_afff63c50f1ff6147409c9c530d1b2db</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question"><sys_decision_question action="INSERT_OR_UPDATE"><active>true</active><answer>2241c81d0f9ff6147409c9c530d1b2b2</answer><condition table="var__m_sys_decision_input_5a9c0c0d0f13b6147409c9c530d1b22a">u_status=true^u_amount=a^u_effective_start&gt;=javascript:gs.dateGenerate('2026-02-01','end')^u_effective_end&lt;=javascript:gs.dateGenerate('2027-02-25','start')^EQ<item display_value="True" endquery="false" field="u_status" goto="false" newquery="false" operator="=" or="false" value="true"/><item display_value="20万円未満" endquery="false" field="u_amount" goto="false" newquery="false" operator="=" or="false" value="a"/><item endquery="false" field="u_effective_start" goto="false" newquery="false" operator="&gt;=" or="false" value="javascript:gs.dateGenerate('2026-02-01','end')"/><item endquery="false" field="u_effective_end" goto="false" newquery="false" operator="&lt;=" or="false" value="javascript:gs.dateGenerate('2027-02-25','start')"/><item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/></condition><decision_table display_value="decision_rule_v3">5a9c0c0d0f13b6147409c9c530d1b22a</decision_table><default_answer>false</default_answer><input_table>var__m_sys_decision_input_5a9c0c0d0f13b6147409c9c530d1b22a</input_table><label>decision_rule_v3_300</label><marked_for_deletion>true</marked_for_deletion><order>300</order><sys_class_name>sys_decision_question</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 02:27:40</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>afff63c50f1ff6147409c9c530d1b2db</sys_id><sys_mod_count>3</sys_mod_count><sys_name>decision_rule_v3_300</sys_name><sys_overrides/><sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package><sys_policy/><sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope><sys_update_name>sys_decision_question_afff63c50f1ff6147409c9c530d1b2db</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 07:02:29</sys_updated_on></sys_decision_question></record_update>]]></payload>
+        <payload_hash>41686740</payload_hash>
+        <record_name>decision_rule_v3_300</record_name>
+        <reverted_from/>
+        <source>36a573ec0fcf36907409c9c530d1b254</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 07:02:29</sys_created_on>
+        <sys_id>91eee0d50f173a147409c9c530d1b2aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c939b3a650000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 07:02:29</sys_updated_on>
+        <type>Decision</type>
+        <update_guid>ddeee0d546173a1451c5febf7a8f39a8</update_guid>
+        <update_guid_history>ddeee0d546173a1451c5febf7a8f39a8:41686740,f641c81d5f9ff614dccbfb83e45670de:-380363891,558eb3c5cf9ff61400d263818c7e9c4a:-354689606,afff63c5fc1ff6140c13a962f73652e1:750965554</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 07:04:39</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_question">sys_decision_question</sys_db_object>
+        <sys_id>193fc061b2f84bf0a2d437e52fb651b9</sys_id>
+        <sys_metadata>afff63c50f1ff6147409c9c530d1b2db</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>decision_rule_v3_300</sys_name>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_scope_delete display_value="">b26603257afd472c9f81ad439a022e90</sys_scope_delete>
+        <sys_update_name>sys_decision_question_afff63c50f1ff6147409c9c530d1b2db</sys_update_name>
+        <sys_update_version display_value="sys_decision_question_afff63c50f1ff6147409c9c530d1b2db">91eee0d50f173a147409c9c530d1b2aa</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 07:04:39</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

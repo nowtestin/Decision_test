@@ -4,6 +4,7 @@
         <element display="true" label="User ID" max_length="32" name="user_id" reference="sys_user" type="reference"/>
         <element label="Job cd" max_length="10" name="job_cd" type="string"/>
         <element label="manage" max_length="32" name="manage" reference="sys_user" type="reference"/>
+        <element label="Sinseibi" max_length="100" name="u_sinseibi" type="glide_date"/>
         <element label="department" max_length="32" name="department" reference="cmn_department" type="reference"/>
         <element label="Org cd" max_length="20" name="org_cd" type="string"/>
         <index name="index">

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="decision_rule_v3">5a9c0c0d0f13b6147409c9c530d1b22a</decision_table>
+        <label>承認パターン_Result部分: A, マネージャ: Abel Tuter, buchou: Barbara Hindley, 版数_results: Ver1</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:53:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>62934c510fdff6147409c9c530d1b2a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>承認パターン_Result部分: A, マネージャ: Abel Tuter, buchou: Barbara Hindley, 版数_results: Ver1</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sys_decision_multi_result_62934c510fdff6147409c9c530d1b2a4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:53:20</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=62934c510fdff6147409c9c530d1b2a4"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>62934c510fdff6147409c9c530d1b2a4</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:53:20</sys_created_on>
+        <sys_id>2a934c510fdff6147409c9c530d1b2a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:53:20</sys_updated_on>
+        <value>A</value>
+        <variable display_value="承認パターン_Result部分">8641c81d0f9ff6147409c9c530d1b203</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>62934c510fdff6147409c9c530d1b2a4</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:53:20</sys_created_on>
+        <sys_id>2e934c510fdff6147409c9c530d1b2a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:53:20</sys_updated_on>
+        <value>Ver1</value>
+        <variable display_value="版数">0a934c510fdff6147409c9c530d1b217</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>62934c510fdff6147409c9c530d1b2a4</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:53:20</sys_created_on>
+        <sys_id>6e934c510fdff6147409c9c530d1b2a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:53:20</sys_updated_on>
+        <value/>
+        <variable display_value="Step2-1承認者">8f9c00cd0f13b6147409c9c530d1b27f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>62934c510fdff6147409c9c530d1b2a4</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:53:20</sys_created_on>
+        <sys_id>a2934c510fdff6147409c9c530d1b2a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:53:20</sys_updated_on>
+        <value>62826bf03710200044e0bfc8bcbe5df1</value>
+        <variable display_value="マネージャ">0f9c00cd0f13b6147409c9c530d1b29f</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>62934c510fdff6147409c9c530d1b2a4</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 03:53:20</sys_created_on>
+        <sys_id>e6934c510fdff6147409c9c530d1b2a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 03:53:20</sys_updated_on>
+        <value>d2826bf03710200044e0bfc8bcbe5dc9</value>
+        <variable display_value="buchou">4dcdc4410f53b6147409c9c530d1b2b7</variable>
+    </sys_variable_value>
+</record_update>

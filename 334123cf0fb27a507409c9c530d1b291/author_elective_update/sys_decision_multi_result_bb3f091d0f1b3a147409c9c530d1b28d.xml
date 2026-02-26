@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="DELETE">
+        <decision_table display_value="decision_rule_v2">fe3fc51d0f1b3a147409c9c530d1b215</decision_table>
+        <label>マネージャ: Abel Tuter</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 09:23:50</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bb3f091d0f1b3a147409c9c530d1b28d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>マネージャ: Abel Tuter</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sys_decision_multi_result_bb3f091d0f1b3a147409c9c530d1b28d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 09:23:50</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="DELETE" query="document_key=bb3f091d0f1b3a147409c9c530d1b28d"/>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>bb3f091d0f1b3a147409c9c530d1b28d</document_key>
+        <order>150</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 09:23:50</sys_created_on>
+        <sys_id>333f091d0f1b3a147409c9c530d1b28f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 09:23:50</sys_updated_on>
+        <value/>
+        <variable display_value="buchou">9b3f091d0f1b3a147409c9c530d1b208</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>bb3f091d0f1b3a147409c9c530d1b28d</document_key>
+        <order>50</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 09:23:50</sys_created_on>
+        <sys_id>733f091d0f1b3a147409c9c530d1b28e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 09:23:50</sys_updated_on>
+        <value/>
+        <variable display_value="承認パターン_Result部分">1b3f091d0f1b3a147409c9c530d1b21a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>bb3f091d0f1b3a147409c9c530d1b28d</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 09:23:50</sys_created_on>
+        <sys_id>773f091d0f1b3a147409c9c530d1b28f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 09:23:50</sys_updated_on>
+        <value/>
+        <variable display_value="版数">df3fc51d0f1b3a147409c9c530d1b2e3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>bb3f091d0f1b3a147409c9c530d1b28d</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 09:23:50</sys_created_on>
+        <sys_id>b73f091d0f1b3a147409c9c530d1b28e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 09:23:50</sys_updated_on>
+        <value/>
+        <variable display_value="Step2-1承認者">233f091d0f1b3a147409c9c530d1b245</variable>
+    </sys_variable_value>
+    <sys_variable_value action="DELETE">
+        <document>sys_decision_multi_result</document>
+        <document_key>bb3f091d0f1b3a147409c9c530d1b28d</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 09:23:50</sys_created_on>
+        <sys_id>fb3f091d0f1b3a147409c9c530d1b28e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 09:23:50</sys_updated_on>
+        <value>62826bf03710200044e0bfc8bcbe5df1</value>
+        <variable display_value="マネージャ">9f3fc51d0f1b3a147409c9c530d1b2f6</variable>
+    </sys_variable_value>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</application>
+        <file_path/>
+        <instance_id>2c290e98ebd3ae549698ff72dad0cd48</instance_id>
+        <instance_name>dev354504</instance_name>
+        <name>sys_decision_multi_result_bb3f091d0f1b3a147409c9c530d1b28d</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result"><sys_decision_multi_result action="INSERT_OR_UPDATE"><decision_table display_value="decision_rule_v2">fe3fc51d0f1b3a147409c9c530d1b215</decision_table><label>マネージャ: Abel Tuter</label><result_elements/><sys_class_name>sys_decision_multi_result</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 09:23:50</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>bb3f091d0f1b3a147409c9c530d1b28d</sys_id><sys_mod_count>0</sys_mod_count><sys_name>マネージャ: Abel Tuter</sys_name><sys_overrides/><sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package><sys_policy/><sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope><sys_update_name>sys_decision_multi_result_bb3f091d0f1b3a147409c9c530d1b28d</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 09:23:50</sys_updated_on></sys_decision_multi_result><sys_variable_value action="delete_multiple" query="document_key=bb3f091d0f1b3a147409c9c530d1b28d"/><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>bb3f091d0f1b3a147409c9c530d1b28d</document_key><order>150</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 09:23:50</sys_created_on><sys_id>333f091d0f1b3a147409c9c530d1b28f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 09:23:50</sys_updated_on><value/><variable display_value="buchou">9b3f091d0f1b3a147409c9c530d1b208</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>bb3f091d0f1b3a147409c9c530d1b28d</document_key><order>50</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 09:23:50</sys_created_on><sys_id>733f091d0f1b3a147409c9c530d1b28e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 09:23:50</sys_updated_on><value/><variable display_value="承認パターン_Result部分">1b3f091d0f1b3a147409c9c530d1b21a</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>bb3f091d0f1b3a147409c9c530d1b28d</document_key><order>25</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 09:23:50</sys_created_on><sys_id>773f091d0f1b3a147409c9c530d1b28f</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 09:23:50</sys_updated_on><value/><variable display_value="版数">df3fc51d0f1b3a147409c9c530d1b2e3</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>bb3f091d0f1b3a147409c9c530d1b28d</document_key><order>200</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 09:23:50</sys_created_on><sys_id>b73f091d0f1b3a147409c9c530d1b28e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 09:23:50</sys_updated_on><value/><variable display_value="Step2-1承認者">233f091d0f1b3a147409c9c530d1b245</variable></sys_variable_value><sys_variable_value action="INSERT_OR_UPDATE"><document>sys_decision_multi_result</document><document_key>bb3f091d0f1b3a147409c9c530d1b28d</document_key><order>100</order><sys_class_name>sys_variable_value</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-02-25 09:23:50</sys_created_on><sys_id>fb3f091d0f1b3a147409c9c530d1b28e</sys_id><sys_mod_count>0</sys_mod_count><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-02-25 09:23:50</sys_updated_on><value>62826bf03710200044e0bfc8bcbe5df1</value><variable display_value="マネージャ">9f3fc51d0f1b3a147409c9c530d1b2f6</variable></sys_variable_value></record_update>]]></payload>
+        <payload_hash>-2033379007</payload_hash>
+        <record_name>マネージャ: Abel Tuter</record_name>
+        <reverted_from/>
+        <source>36a573ec0fcf36907409c9c530d1b254</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-25 09:23:50</sys_created_on>
+        <sys_id>733f091d0f1b3a147409c9c530d1b292</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19c941ca1b70000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-25 09:23:50</sys_updated_on>
+        <type>Decision Table Multiple Result</type>
+        <update_guid>333f091d091b3a14ab34e02c8ade3891</update_guid>
+        <update_guid_history>333f091d091b3a14ab34e02c8ade3891:-2033379007</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-02-26 09:34:42</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_multi_result">sys_decision_multi_result</sys_db_object>
+        <sys_id>1603fc9bf83e42e08d7c1a08c0447724</sys_id>
+        <sys_metadata>bb3f091d0f1b3a147409c9c530d1b28d</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>マネージャ: Abel Tuter</sys_name>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_scope_delete display_value="">b26603257afd472c9f81ad439a022e90</sys_scope_delete>
+        <sys_update_name>sys_decision_multi_result_bb3f091d0f1b3a147409c9c530d1b28d</sys_update_name>
+        <sys_update_version display_value="sys_decision_multi_result_bb3f091d0f1b3a147409c9c530d1b28d">733f091d0f1b3a147409c9c530d1b292</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-02-26 09:34:42</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

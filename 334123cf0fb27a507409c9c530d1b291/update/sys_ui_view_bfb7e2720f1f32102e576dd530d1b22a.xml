@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_view">
+    <sys_ui_view action="INSERT_OR_UPDATE">
+        <group/>
+        <hidden>false</hidden>
+        <name>11</name>
+        <roles/>
+        <sys_class_name>sys_ui_view</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-02 07:41:24</sys_created_on>
+        <sys_id>bfb7e2720f1f32102e576dd530d1b22a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>11</sys_name>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sys_ui_view_bfb7e2720f1f32102e576dd530d1b22a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-02 07:41:24</sys_updated_on>
+        <title>11</title>
+        <user/>
+    </sys_ui_view>
+</record_update>

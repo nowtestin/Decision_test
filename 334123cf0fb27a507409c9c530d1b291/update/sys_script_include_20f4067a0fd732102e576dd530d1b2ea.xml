@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_846092_decisio_0.DecisionV2Utils</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>DecisionV2Utils</name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[var DecisionV2Utils = Class.create();
+DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getDecisionResults: function() {
+        var u_id = this.getParameter('u_id');
+		var dtAPI = new sn_dt.DecisionTableAPI();
+
+        var inputs = {
+            'u_id': u_id, // 機能ID输入列
+        };
+        var dtSysId = '3Dfe3fc51d0f1b3a147409c9c530d1b215'; // 你的决策表sys_id（必填）
+        var result = dtAPI.executeDecisionTable(dtSysId, inputs);
+
+        var output = {};
+        if (result && result.outputs) {
+            output.u_pattenrn_1 = result.outputs.u_pattenrn_1 || '';
+            output.step2_1 = result.outputs.step2_1 || ''; // Step2-1对应输出列
+            output.success = true;
+        } else {
+            output.success = false;
+            output.message = '決策表に一致するルールが存在しません';
+        }
+            
+        return JSON.stringify(output);
+            
+        },
+
+    getEmployeeInfo: function() {
+        var userGr = new GlideRecord('sys_user');
+        var name = this.getParameter('user');
+        /*if ("" == user_name) {
+            user_name = gs.getUserName();
+        }*/
+        userGr.get(name);
+
+        var configuration = {};	
+        //configuration.employee_number = userGr.employee_number + ''; //社員番号
+        configuration.name = userGr.name + ''; //氏名
+        configuration.email = userGr.email + ''; //メールアドレス
+		
+        return JSON.stringify(configuration);
+    },
+
+	
+    type: 'DecisionV2Utils'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-02 05:17:34</sys_created_on>
+        <sys_id>20f4067a0fd732102e576dd530d1b2ea</sys_id>
+        <sys_mod_count>15</sys_mod_count>
+        <sys_name>DecisionV2Utils</sys_name>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sys_script_include_20f4067a0fd732102e576dd530d1b2ea</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-02 09:13:56</sys_updated_on>
+    </sys_script_include>
+</record_update>

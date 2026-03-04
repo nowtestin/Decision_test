@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_decision_multi_result_element">
+    <sys_decision_multi_result_element action="DELETE">
+        <active>true</active>
+        <array>false</array>
+        <attributes/>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>u_step2_2</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>step2_2</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="decision_rule_v2 delta">beccefcb0fd3f2102e576dd530d1b2f1</model>
+        <model_id>beccefcb0fd3f2102e576dd530d1b2f1</model_id>
+        <model_table/>
+        <name>var__m_sys_decision_multi_result_element_beccefcb0fd3f2102e576dd530d1b2f1</name>
+        <next_element/>
+        <order>300</order>
+        <parent display_value="step2_2">2b4b9a610f53fa147409c9c530d1b2c1</parent>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_decision_multi_result_element</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-03 07:21:40</sys_created_on>
+        <sys_id>f4dce30f0fd3f2102e576dd530d1b259</sys_id>
+        <sys_name>step2_2</sys_name>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sys_decision_multi_result_element_f4dce30f0fd3f2102e576dd530d1b259</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-03 07:21:40</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_decision_multi_result_element>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</application>
+        <file_path/>
+        <instance_id>b0e25b9e3bdf7e14986d048aa4e45a4c</instance_id>
+        <instance_name>dev364288</instance_name>
+        <name>sys_decision_multi_result_element_f4dce30f0fd3f2102e576dd530d1b259</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_decision_multi_result_element"&gt;&lt;sys_decision_multi_result_element action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;array&gt;false&lt;/array&gt;&lt;attributes/&gt;&lt;audit&gt;false&lt;/audit&gt;&lt;calculation&gt;&lt;![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]&gt;&lt;/calculation&gt;&lt;choice/&gt;&lt;choice_field/&gt;&lt;choice_table/&gt;&lt;column_label/&gt;&lt;comments/&gt;&lt;create_roles/&gt;&lt;default_value/&gt;&lt;defaultsort/&gt;&lt;delete_roles/&gt;&lt;dependent/&gt;&lt;dependent_on_field/&gt;&lt;display&gt;false&lt;/display&gt;&lt;dynamic_creation&gt;false&lt;/dynamic_creation&gt;&lt;dynamic_creation_script/&gt;&lt;dynamic_default_value/&gt;&lt;dynamic_ref_qual/&gt;&lt;element&gt;u_step2_2&lt;/element&gt;&lt;element_reference&gt;false&lt;/element_reference&gt;&lt;foreign_database/&gt;&lt;formula/&gt;&lt;function_definition/&gt;&lt;function_field&gt;false&lt;/function_field&gt;&lt;help/&gt;&lt;hint/&gt;&lt;internal_type display_value="String"&gt;string&lt;/internal_type&gt;&lt;label&gt;step2_2&lt;/label&gt;&lt;mandatory&gt;false&lt;/mandatory&gt;&lt;max_length&gt;40&lt;/max_length&gt;&lt;model display_value="decision_rule_v2 delta"&gt;beccefcb0fd3f2102e576dd530d1b2f1&lt;/model&gt;&lt;model_id&gt;beccefcb0fd3f2102e576dd530d1b2f1&lt;/model_id&gt;&lt;model_table/&gt;&lt;name&gt;var__m_sys_decision_multi_result_element_beccefcb0fd3f2102e576dd530d1b2f1&lt;/name&gt;&lt;next_element/&gt;&lt;order&gt;300&lt;/order&gt;&lt;parent display_value="step2_2"&gt;2b4b9a610f53fa147409c9c530d1b2c1&lt;/parent&gt;&lt;primary&gt;false&lt;/primary&gt;&lt;read_only&gt;false&lt;/read_only&gt;&lt;read_roles/&gt;&lt;reference/&gt;&lt;reference_cascade_rule/&gt;&lt;reference_floats&gt;false&lt;/reference_floats&gt;&lt;reference_key/&gt;&lt;reference_qual/&gt;&lt;reference_qual_condition/&gt;&lt;reference_type/&gt;&lt;spell_check&gt;false&lt;/spell_check&gt;&lt;staged&gt;false&lt;/staged&gt;&lt;sys_class_name&gt;sys_decision_multi_result_element&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-03 07:21:40&lt;/sys_created_on&gt;&lt;sys_id&gt;f4dce30f0fd3f2102e576dd530d1b259&lt;/sys_id&gt;&lt;sys_name&gt;step2_2&lt;/sys_name&gt;&lt;sys_package display_value="Decision_test" source="x_846092_decisio_0"&gt;334123cf0fb27a507409c9c530d1b291&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Decision_test"&gt;334123cf0fb27a507409c9c530d1b291&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_decision_multi_result_element_f4dce30f0fd3f2102e576dd530d1b259&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-03 07:21:40&lt;/sys_updated_on&gt;&lt;table_reference&gt;false&lt;/table_reference&gt;&lt;text_index&gt;false&lt;/text_index&gt;&lt;unique&gt;false&lt;/unique&gt;&lt;use_dependent_field&gt;false&lt;/use_dependent_field&gt;&lt;use_dynamic_default&gt;false&lt;/use_dynamic_default&gt;&lt;use_reference_qualifier&gt;simple&lt;/use_reference_qualifier&gt;&lt;virtual&gt;false&lt;/virtual&gt;&lt;virtual_type&gt;script&lt;/virtual_type&gt;&lt;widget/&gt;&lt;write_roles/&gt;&lt;xml_view&gt;false&lt;/xml_view&gt;&lt;/sys_decision_multi_result_element&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1241957364</payload_hash>
+        <record_name>step2_2</record_name>
+        <reverted_from/>
+        <source>5ff3dd620fd372102e576dd530d1b27c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-03 07:21:41</sys_created_on>
+        <sys_id>49dce30f0fd3f2102e576dd530d1b299</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cb292f5260000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-03 07:21:41</sys_updated_on>
+        <type>Result</type>
+        <update_guid>85dce30f2ad3f210d0acc54515ab6998</update_guid>
+        <update_guid_history>85dce30f2ad3f210d0acc54515ab6998:-1241957364,38dce30fdad3f2108c34a1f5022ad36c:1903313604,f0dce30f33d3f210673c1fabd4637465:-1241957364</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-03 07:25:10</sys_created_on>
+        <sys_db_object display_value="" name="sys_decision_multi_result_element">sys_decision_multi_result_element</sys_db_object>
+        <sys_id>037cb8e3f2bc423ab0b0eb879e502f84</sys_id>
+        <sys_metadata>f4dce30f0fd3f2102e576dd530d1b259</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>step2_2</sys_name>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_scope_delete display_value="">b26603257afd472c9f81ad439a022e90</sys_scope_delete>
+        <sys_update_name>sys_decision_multi_result_element_f4dce30f0fd3f2102e576dd530d1b259</sys_update_name>
+        <sys_update_version display_value="sys_decision_multi_result_element_f4dce30f0fd3f2102e576dd530d1b259">49dce30f0fd3f2102e576dd530d1b299</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-03 07:25:10</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

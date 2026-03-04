@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="e1fff6360fdf32102e576dd530d1b2d0" sys_domain="global" table="sys_decision_multi_result_element" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-02 09:27:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e1ff3a360fdf32102e576dd530d1b204</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_decision_multi_result_element" name="sys_decision_multi_result_element" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">e1fff6360fdf32102e576dd530d1b2d0</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="sys_decision_multi_result_element" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">e1fff6360fdf32102e576dd530d1b2ef</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-02 09:27:11</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-02 09:27:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7dff3a360fdf32102e576dd530d1b222</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_decision_multi_result_element" name="sys_decision_multi_result_element" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">e1fff6360fdf32102e576dd530d1b2d0</sys_ui_form>
+            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_decision_multi_result_element" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">a9ff3a360fdf32102e576dd530d1b204</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-02 09:27:11</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-02 09:27:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>65fff6360fdf32102e576dd530d1b2dd</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_decision_multi_result_element" name="sys_decision_multi_result_element" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">e1fff6360fdf32102e576dd530d1b2d0</sys_ui_form>
+            <sys_ui_section caption="Choice List Specification" display_value="Choice List Specification" name="sys_decision_multi_result_element" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">29fff6360fdf32102e576dd530d1b2d4</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-02 09:27:11</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-02 09:27:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e5fff6360fdf32102e576dd530d1b2e6</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_decision_multi_result_element" name="sys_decision_multi_result_element" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">e1fff6360fdf32102e576dd530d1b2d0</sys_ui_form>
+            <sys_ui_section caption="Dependent Field" display_value="Dependent Field" name="sys_decision_multi_result_element" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">2dfff6360fdf32102e576dd530d1b2dd</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-02 09:27:11</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-02 09:27:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>2dfff6360fdf32102e576dd530d1b2ee</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_decision_multi_result_element" name="sys_decision_multi_result_element" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">e1fff6360fdf32102e576dd530d1b2d0</sys_ui_form>
+            <sys_ui_section caption="Calculated Value" display_value="Calculated Value" name="sys_decision_multi_result_element" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">adfff6360fdf32102e576dd530d1b2e6</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-02 09:27:11</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-02 09:27:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>7dff3a360fdf32102e576dd530d1b22b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="sys_decision_multi_result_element" name="sys_decision_multi_result_element" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">e1fff6360fdf32102e576dd530d1b2d0</sys_ui_form>
+            <sys_ui_section caption="Default Value" display_value="Default Value" name="sys_decision_multi_result_element" sys_domain="global" view="7966be310a0a0b8c00bd504090503227">35ff3a360fdf32102e576dd530d1b223</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-02 09:27:11</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>sys_decision_multi_result_element</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-03-02 09:27:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e1fff6360fdf32102e576dd530d1b2d0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>sys_decision_multi_result_element</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+            <sys_update_name>sys_ui_form_sections_e1fff6360fdf32102e576dd530d1b2d0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-03-02 09:27:11</sys_updated_on>
+            <sys_user/>
+            <view display_value="Advanced" name="advanced">7966be310a0a0b8c00bd504090503227</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

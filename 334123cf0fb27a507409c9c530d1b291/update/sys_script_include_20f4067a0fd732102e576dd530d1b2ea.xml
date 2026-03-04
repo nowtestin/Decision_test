@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
     <sys_script_include action="INSERT_OR_UPDATE">
-        <access>package_private</access>
+        <access>public</access>
         <active>true</active>
         <api_name>x_846092_decisio_0.DecisionV2Utils</api_name>
-        <caller_access/>
+        <caller_access>2</caller_access>
         <client_callable>true</client_callable>
         <description/>
         <mobile_callable>false</mobile_callable>
@@ -11,44 +11,61 @@
         <sandbox_callable>true</sandbox_callable>
         <script><![CDATA[var DecisionV2Utils = Class.create();
 DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	//カスタムDecisionテーブルの情報を参照
     getDecisionResults: function() {
-        var u_id = this.getParameter('u_id');
-		var dtAPI = new sn_dt.DecisionTableAPI();
 
+		var params = JSON.parse(this.getParameter("inputs"));
         var inputs = {
-            'u_id': u_id, // 機能ID输入列
-        };
-        var dtSysId = '3Dfe3fc51d0f1b3a147409c9c530d1b215'; // 你的决策表sys_id（必填）
-        var result = dtAPI.executeDecisionTable(dtSysId, inputs);
+			instance_type: params.instance_type
+		};
 
-        var output = {};
-        if (result && result.outputs) {
-            output.u_pattenrn_1 = result.outputs.u_pattenrn_1 || '';
-            output.step2_1 = result.outputs.step2_1 || ''; // Step2-1对应输出列
+		var dt = new sn_dt.DecisionTableAPI(); 
+       // var dtSysId = 'fe3fc51d0f1b3a147409c9c530d1b215'; // カスタムDecisionテーブルsys_id
+		var dtSysId = '51b35a90c3723010a9f5e548fa40ddb2';
+		
+		//var response = dt.getDecision(dtSysId, inputs);
+		//var response = dt.getAnswers(dtSysId);
+		var response = dt.getAll(dtSysId);
+		gs.info('respoinputsnse1' + JSON.stringify(inputs));
+		gs.info('response' + JSON.stringify(response));
+        return JSON.stringify(response);
+
+        /*var output = {};
+        if (response  && response.result_elements) {
+			output.u_pattenrn_1 = response.result_elements.u_pattenrn_1.getDisplayValue();
+			output.step2_1 = response.result_elements.step2_1.getDisplayValue();
             output.success = true;
         } else {
             output.success = false;
             output.message = '決策表に一致するルールが存在しません';
         }
             
-        return JSON.stringify(output);
+        return JSON.stringify(output);*/
             
         },
 
     getEmployeeInfo: function() {
         var userGr = new GlideRecord('sys_user');
         var name = this.getParameter('user');
-        /*if ("" == user_name) {
-            user_name = gs.getUserName();
-        }*/
         userGr.get(name);
 
         var configuration = {};	
-        //configuration.employee_number = userGr.employee_number + ''; //社員番号
         configuration.name = userGr.name + ''; //氏名
         configuration.email = userGr.email + ''; //メールアドレス
 		
         return JSON.stringify(configuration);
+    },
+	//decisionのsys_IDを取得
+    getSysId: function() {
+        var name = this.getParameter('name');
+        var gr = new GlideRecord('sys_decision');
+        gr.addQuery('name', name);
+        gr.query();
+
+        if (gr.next()) {
+            return gr.getValue('sys_id');
+        }
+        return 'No Decision Table found with name: ' + name;
     },
 
 	
@@ -58,13 +75,13 @@ DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-02 05:17:34</sys_created_on>
         <sys_id>20f4067a0fd732102e576dd530d1b2ea</sys_id>
-        <sys_mod_count>15</sys_mod_count>
+        <sys_mod_count>93</sys_mod_count>
         <sys_name>DecisionV2Utils</sys_name>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>sys_script_include_20f4067a0fd732102e576dd530d1b2ea</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-02 09:13:56</sys_updated_on>
+        <sys_updated_on>2026-03-04 05:18:30</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_846092_decisio_0.GetChoicesFromDT</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>GetChoicesFromDT</name>
+        <sandbox_callable>true</sandbox_callable>
+        <script><![CDATA[var GetChoicesFromDT = Class.create();
+GetChoicesFromDT.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+    getChoices: function() {
+      
+
+        var catItem = gs.nil(this.getParameter('sysparm_cat_item')) ? null : this.getParameter('sysparm_cat_item'); // Mandatory parameter
+
+        var catVar = gs.nil(this.getParameter('sysparm_cat_variable')) ? null : this.getParameter('sysparm_cat_variable'); // Optional parameter example (variable from record producer). Multiple as needed, or remove if not.
+        var decisionTableId = 'be0b05670f9f76102e576dd530d1b2e0'; //Sys ID of the decision table. Store in a system property and set with gs.getProperty()
+        var u_catalog_item = ''; // Make sure you set this to the technical name of the first input of your Decision Table
+        var u_catalog_variable = ''; // Make sure you set this to the technical name of the second input of your Decision Table, if you have one. Multiply as needed, or remove if not.
+        var resultColumn = ''; // Set this to the technical name of the result column that contains your choices
+        var answerArray = [];
+        var choiceArr = [];
+        var iter1 = 0;   
+        if (!gs.nil(catItem) && !gs.nil(decisionTableId)) {
+            var choiceQuery = 'var__m_sys_decision_multi_result_element_' + decisionTableId;
+            var decisonTable = new sn_dt.DecisionTableAPI();
+            var inputs = new Object();
+            inputs[u_catalog_item] = '' + catItem;
+            // Repeat this block as necessary with additional parameters and inputs
+            if (!gs.nil(catVar)) {
+                inputs[u_catalog_variable] = '' + catVar;
+
+            }    
+            var dtResponse = decisonTable.getDecisions(decisionTableId, inputs);
+
+            while (iter1 < dtResponse.length) {
+                answerArray.push(dtResponse[iter1]['result_elements'][resultColumn].toString());
+                iter1++;
+            }
+       // Now find the the actual choices with labels
+            var choiceGr = new GlideRecord('sys_choice');
+            choiceGr.addQuery('name', choiceQuery);
+            choiceGr.addQuery('value', 'IN', answerArray.toString());
+            choiceGr.setLimit(30); // The Choice table is huge, so I recommend setting a reasonable query limit. You should have an idea of the max # of results anyway.
+            choiceGr.query();
+            while (choiceGr.next()) {
+                var choice = {};
+                choice['value'] = choiceGr.getValue('value');
+                choice['label'] = choiceGr.getValue('label');
+                choiceArr.push(choice);
+            }
+            gs.info('choiceArr' + choiceArr);
+            return JSON.stringify(choiceArr); // Return a stringified array to the client
+
+        } else {
+            gs.error('GetChoicesFromDT Script include did not run as the catItem mandatory variable is null: ' + catItem + ' or decision table sys_id is empty: ' + decisionTableId);
+            return;
+        }
+    },
+
+    type: 'GetChoicesFromDT'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-04 09:51:13</sys_created_on>
+        <sys_id>578515ab0fdf76102e576dd530d1b297</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>GetChoicesFromDT</sys_name>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sys_script_include_578515ab0fdf76102e576dd530d1b297</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-04 11:12:38</sys_updated_on>
+    </sys_script_include>
+</record_update>

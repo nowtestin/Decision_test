@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="73728e7f0fd33a102e576dd530d1b26f" label="customize_decision" max_length="40" name="x_846092_decisio_0_customize_decision" type="collection">
+        <element label="Effective start" max_length="40" name="u_effective_start" type="glide_date"/>
+        <element label="Result pattern 2" max_length="40" name="u_result_pattern_2" type="string"/>
+        <element label="u_result_step2_3" max_length="40" name="u_result_step2_3" type="string"/>
+        <element label="Result pattern 1" max_length="40" name="u_result_pattern_1" type="string"/>
+        <element label="Result step2 1" max_length="40" name="u_result_step2_1" type="string"/>
+        <element label="Result step3 1" max_length="40" name="u_result_step3_1" type="string"/>
+        <element label="Amount" max_length="40" name="u_amount" type="string"/>
+        <element label="u_result_step2_2" max_length="40" name="u_result_step2_2" type="string"/>
+        <element label="Result ver" max_length="40" name="u_result_ver" type="string"/>
+        <element label="Result step3 2" max_length="40" name="u_result_step3_2" type="string"/>
+        <element label="ID" max_length="40" name="u_id" reference="sc_cat_item" type="reference"/>
+    </element>
+</database>

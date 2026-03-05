@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-05 09:55:09</sys_created_on>
+        <sys_id>ac23e2f30f1b3a102e576dd530d1b246</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>DecisionV2Utils.decision_table_reader</sys_name>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_security_acl display_value="DecisionV2Utils">2423a2f30f1b3a102e576dd530d1b29c</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_ac23e2f30f1b3a102e576dd530d1b246</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-05 09:55:09</sys_updated_on>
+        <sys_user_role display_value="decision_table_reader" name="decision_table_reader">61c9ba84b3131300ed7fc9c316a8dcba</sys_user_role>
+    </sys_security_acl_role>
+</record_update>

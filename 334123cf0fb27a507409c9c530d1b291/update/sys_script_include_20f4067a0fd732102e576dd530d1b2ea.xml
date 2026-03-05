@@ -2,35 +2,32 @@
     <sys_script_include action="INSERT_OR_UPDATE">
         <access>public</access>
         <active>true</active>
-        <api_name>x_846092_decisio_0.DecisionV2Utils</api_name>
+        <api_name/>
         <caller_access>2</caller_access>
         <client_callable>true</client_callable>
         <description/>
         <mobile_callable>false</mobile_callable>
-        <name>DecisionV2Utils</name>
+        <name/>
         <sandbox_callable>true</sandbox_callable>
         <script><![CDATA[var DecisionV2Utils = Class.create();
 DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	//カスタムDecisionテーブルの情報を参照
-    getDecisionResults: function() {
-
-		var params = JSON.parse(this.getParameter("inputs"));
-        var inputs = {
-			instance_type: params.instance_type
-		};
-
+    /*getDecisionResults: function() {
 		var dt = new sn_dt.DecisionTableAPI(); 
-       // var dtSysId = 'fe3fc51d0f1b3a147409c9c530d1b215'; // カスタムDecisionテーブルsys_id
-		var dtSysId = '51b35a90c3723010a9f5e548fa40ddb2';
-		
-		//var response = dt.getDecision(dtSysId, inputs);
+
+		var inputs = JSON.parse(this.getParameter("inputs"));
+		gs.info('inputs' + JSON.stringify(inputs));
+
+        var dtSysId = 'fe3fc51d0f1b3a147409c9c530d1b215'; // カスタムDecisionテーブルsys_id
+
+		var response = dt.getDecision(dtSysId,inputs);
 		//var response = dt.getAnswers(dtSysId);
-		var response = dt.getAll(dtSysId);
-		gs.info('respoinputsnse1' + JSON.stringify(inputs));
+		//var response = dt.getAll();
+		var jsonObject =JSON.stringify(response);
 		gs.info('response' + JSON.stringify(response));
         return JSON.stringify(response);
 
-        /*var output = {};
+        var output = {};
         if (response  && response.result_elements) {
 			output.u_pattenrn_1 = response.result_elements.u_pattenrn_1.getDisplayValue();
 			output.step2_1 = response.result_elements.step2_1.getDisplayValue();
@@ -40,9 +37,25 @@ DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
             output.message = '決策表に一致するルールが存在しません';
         }
             
-        return JSON.stringify(output);*/
+        return JSON.stringify(output);
             
-        },
+        },*/
+
+
+    getDecisionResults: function() {
+		var gr = new GlideRecord('x_846092_decisio_0_customize_decision');
+		gr.addQuery('u_id', 'Decisionで承認者を設定_v3');
+		gr.addQuery("u_effective_start", "<=", "javascript:gs.endOfToday()");
+		gr.query();
+
+        var configuration = {};	
+        configuration.u_id = gr.u_id + ''; //氏名
+        configuration.u_result_pattern_1 = gr.u_result_pattern_1 + ''; //メールアドレス
+		configuration.u_result_step2_1 = gr.u_result_step2_1 + '';
+        return JSON.stringify(configuration);
+
+     },
+
 
     getEmployeeInfo: function() {
         var userGr = new GlideRecord('sys_user');
@@ -75,13 +88,13 @@ DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-02 05:17:34</sys_created_on>
         <sys_id>20f4067a0fd732102e576dd530d1b2ea</sys_id>
-        <sys_mod_count>93</sys_mod_count>
-        <sys_name>DecisionV2Utils</sys_name>
+        <sys_mod_count>140</sys_mod_count>
+        <sys_name/>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>sys_script_include_20f4067a0fd732102e576dd530d1b2ea</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-04 05:18:30</sys_updated_on>
+        <sys_updated_on>2026-03-05 09:41:59</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="u_id" table="x_846092_decisio_0_customize_decision">
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_decision_multi_result_element">
+    <sys_decision_multi_result_element action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <attributes/>
@@ -13,8 +13,8 @@
         <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>ID</column_label>
-        <comments/>
+        <column_label>u_script_name</column_label>
+        <comments>スクリプト名</comments>
         <create_roles/>
         <default_value/>
         <defaultsort/>
@@ -26,21 +26,29 @@
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>u_id</element>
+        <element>u_script_name</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <formula/>
         <function_definition/>
         <function_field>false</function_field>
-        <internal_type display_value="String">string</internal_type>
+        <help/>
+        <hint/>
+        <internal_type display_value="Reference">reference</internal_type>
+        <label>u_script_name</label>
         <mandatory>false</mandatory>
-        <max_length>4000</max_length>
-        <name>x_846092_decisio_0_customize_decision</name>
+        <max_length>32</max_length>
+        <model display_value="test">9e4dee400f2bba102e576dd530d1b2ba</model>
+        <model_id>9e4dee400f2bba102e576dd530d1b2ba</model_id>
+        <model_table/>
+        <name>var__m_sys_decision_multi_result_element_9e4dee400f2bba102e576dd530d1b2ba</name>
         <next_element/>
+        <order>100</order>
+        <parent/>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference/>
+        <reference display_value="" name="catalog_script_client">catalog_script_client</reference>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -49,16 +57,17 @@
         <reference_type/>
         <spell_check>false</spell_check>
         <staged>false</staged>
-        <sys_class_name>sys_dictionary</sys_class_name>
+        <sys_class_name>sys_decision_multi_result_element</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-03-05 07:35:50</sys_created_on>
-        <sys_name>ID</sys_name>
+        <sys_created_on>2026-03-06 05:27:13</sys_created_on>
+        <sys_id>e96fe2840f2bba102e576dd530d1b259</sys_id>
+        <sys_name>u_script_name</sys_name>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
         <sys_policy/>
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
-        <sys_update_name>sys_dictionary_x_846092_decisio_0_customize_decision_u_id</sys_update_name>
+        <sys_update_name>sys_decision_multi_result_element_e96fe2840f2bba102e576dd530d1b259</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-06 02:41:51</sys_updated_on>
+        <sys_updated_on>2026-03-06 05:27:14</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -70,5 +79,5 @@
         <widget/>
         <write_roles/>
         <xml_view>false</xml_view>
-    </sys_dictionary>
+    </sys_decision_multi_result_element>
 </record_update>

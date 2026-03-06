@@ -84,18 +84,18 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-05 08:17:10</sys_created_on>
         <sys_id>7356c2f70f173a102e576dd530d1b28f</sys_id>
-        <sys_mod_count>8</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name>帳票ID</sys_name>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
         <sys_policy/>
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>item_option_new_7356c2f70f173a102e576dd530d1b28f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-05 09:12:24</sys_updated_on>
+        <sys_updated_on>2026-03-06 02:49:40</sys_updated_on>
         <table/>
         <tooltip/>
         <topic_block/>
-        <type>18</type>
+        <type>6</type>
         <ui_page/>
         <unique>false</unique>
         <use_dynamic_default>false</use_dynamic_default>

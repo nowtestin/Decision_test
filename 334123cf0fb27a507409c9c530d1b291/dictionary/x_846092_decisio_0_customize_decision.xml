@@ -10,6 +10,6 @@
         <element label="u_result_step2_2" max_length="40" name="u_result_step2_2" type="string"/>
         <element label="Result ver" max_length="40" name="u_result_ver" type="string"/>
         <element label="Result step3 2" max_length="40" name="u_result_step3_2" type="string"/>
-        <element label="ID" max_length="40" name="u_id" reference="sc_cat_item" type="reference"/>
+        <element label="ID" max_length="4000" name="u_id" type="string"/>
     </element>
 </database>

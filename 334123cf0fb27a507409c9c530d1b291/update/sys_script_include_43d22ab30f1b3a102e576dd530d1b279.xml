@@ -11,23 +11,23 @@
         <sandbox_callable>true</sandbox_callable>
         <script><![CDATA[var DecisionV2Utils = Class.create();
 DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
-	//カスタムDecisionテーブルの情報を参照
-    getDecisionResults:function() {
-    var dtAPI = new sn_dt.DecisionTableAPI();
-    var params = JSON.parse(this.getParameter("inputs"));
-    var inputs = {
-        u_id: '' +params.u_id
+    //カスタムDecisionテーブルの情報を参照
+    getDecisionResults: function() {
+        var dtAPI = new sn_dt.DecisionTableAPI();
+        var params = JSON.parse(this.getParameter("inputs"));
+        var inputs = {
+            u_id: '' + params.u_id
 
-    };
-    
-    var dtSysId = "fe3fc51d0f1b3a147409c9c530d1b215"; //カスタムDecisionテーブルのsys_id
-    var response = dtAPI.getDecision(dtSysId, inputs);
-    //var response = dtAPI.getAnswers(dtSysId);
-	//var response = dtAPI.getAll();
-	gs.info("input" + JSON.stringify(inputs));
-	gs.info("response" + JSON.stringify(response));
-	return JSON.stringify(response);
-	/*var output ={};
+        };
+
+        var dtSysId = "fe3fc51d0f1b3a147409c9c530d1b215"; //カスタムDecisionテーブルのsys_id
+        var response = dtAPI.getDecision(dtSysId, inputs);
+        //var response = dtAPI.getAnswers(dtSysId);
+        //var response = dtAPI.getAll();
+        gs.info("input" + JSON.stringify(inputs));
+        gs.info("response" + JSON.stringify(response));
+        return JSON.stringify(response);
+        /*var output ={};
 	if(response && response.result_elements) {
 		output.u_pattenrn_1 = response.result_elements.u_pattenrn_1;
 		output.step2_1 = response.result_elements.step2_1;
@@ -35,27 +35,46 @@ DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         output.message ='結策表に一致するルールが存在しません';
 	}
     return JSON.stringify(output);*/
-	},
+    },
 
-    getRoleResult:function() {
-    var gr = new GlideRecord('x_846092_decisio_0_customize_decision');
-    gr.addQuery('u_id', 'Decisionで承認者を設定_v3');
-    gr.addQuery('u_effective_start', "<=", "javascript:gs.endOfToday()");
-    gr.query();
+    getRoleResult: function() {
+        var gr = new GlideRecord('x_846092_decisio_0_customize_decision');
+        gr.addQuery('u_id', 'P00030');
+        //gr.addQuery('u_effective_start', "<=", "javascript:gs.endOfToday()");
+		gr.addQuery('u_effective_start', "<=", "2026-02-28");
+        gr.query();
 
- var results = [];
+        if (gr.next()) {
+            return JSON.stringify({
+                u_result_step2_1: gr.getValue('u_result_step2_1'),
+                u_result_pattern_1: gr.getValue('u_result_pattern_1')
+            });
+        }
+        /*var results = [];
         while (gr.next()) {
             results.push({
                 u_id: gr.getValue('u_id'),
                 u_result_step2_1: gr.getValue('u_result_step2_1'),
-                u_pattenrn_1: gr.getValue('u_pattenrn_1')
+                u_result_pattern_1: gr.getValue('u_result_pattern_1')
             });
         }
-gs.info('results' + results);
-        return results; 
+        gs.info('results' + gr.getValue('u_result_step2_1'));
+        return results;*/
     },
 
+    getEmployeeInfo: function() {
+        name = this.getParameter("user");
+        var gr = new GlideRecord('sys_user');
+        gr.addQuery('name', name);
+        gr.query();
+        if (gr.next()) {
+            return JSON.stringify({
+                name: gr.getValue('name'),
+                email: gr.getValue('email')
+            });
+        }
 
+    },
 
 
 
@@ -65,13 +84,13 @@ gs.info('results' + results);
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-05 09:55:08</sys_created_on>
         <sys_id>43d22ab30f1b3a102e576dd530d1b279</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>DecisionV2Utils</sys_name>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>sys_script_include_43d22ab30f1b3a102e576dd530d1b279</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-05 10:26:06</sys_updated_on>
+        <sys_updated_on>2026-03-06 03:06:33</sys_updated_on>
     </sys_script_include>
 </record_update>

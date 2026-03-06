@@ -26,9 +26,10 @@
 
    function parseResponse(response) {
         var answer = response.responseXML.documentElement.getAttribute('answer');
-        if ("" != answer) {alert(answer);
+        if ("" != answer) {
 			var object = JSON.parse(answer);
-            console.log('u_pattenrn_1: ' + object.u_pattenrn_1);
+			alert('object' +JSON.stringify(object));
+            console.log('u_result_pattern_1: ' + object.u_result_pattern_1);
             console.log('u_result_step2_1: ' +object.u_result_step2_1);
         }
     }
@@ -52,8 +53,8 @@
     }*/
 
 	//sys_userの情報を取得
-    /*
-    var util = new GlideAjax('DecisionV2Utils');
+
+    /*var util = new GlideAjax('DecisionV2Utils');
 	util.addParam('sysparm_name', 'getEmployeeInfo');
     util.addParam('user','Abel Tuter');
     util.getXML(parseResponse);
@@ -122,7 +123,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cd649d260fd372102e576dd530d1b20a</sys_id>
-        <sys_mod_count>62</sys_mod_count>
+        <sys_mod_count>69</sys_mod_count>
         <sys_name>onLoad shounin test</sys_name>
         <sys_overrides/>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
@@ -130,7 +131,7 @@
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>catalog_script_client_cd649d260fd372102e576dd530d1b20a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-05 10:15:25</sys_updated_on>
+        <sys_updated_on>2026-03-06 03:03:04</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>

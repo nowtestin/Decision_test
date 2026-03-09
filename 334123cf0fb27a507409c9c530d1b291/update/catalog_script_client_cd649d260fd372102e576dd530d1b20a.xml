@@ -20,11 +20,45 @@
         <published_ref/>
         <script><![CDATA[function onLoad() {
 
-    var util = new GlideAjax('DecisionV2Utils');
-    util.addParam('sysparm_name', 'getRoleResult');
-    util.getXML(parseResponse);
+//decision_rule_v22を取得
+    var util = new GlideAjax('x_846092_decisio_0.DecisionV2Utils');
+    util.addParam('sysparm_name', 'getDecisionv22_Results');
+    util.addParam('u_id', 'P00030');
+    //util.addParam('inputs',JSON.stringify(inputs));
 
-   function parseResponse(response) {
+
+    util.getXMLAnswer(function(response) {
+        var result = JSON.parse(response);
+        var u_pat_1 = result.u_pat_1;
+        var u_step2_1 = result.u_step2_1;	
+        console.log('u_pat_1: ' + u_pat_1);
+        console.log('u_step2_1: ' + u_step2_1);
+    });
+//decision_rule_v21を取得
+/*    var util = new GlideAjax('x_846092_decisio_0.DecisionV2Utils');
+    util.addParam('sysparm_name', 'getDecisionv21_Results');
+    util.addParam('u_id', 'P00030');
+    util.addParam('u_amount', 'a');
+    //util.addParam('inputs',JSON.stringify(inputs));
+
+
+    util.getXMLAnswer(function(response) {
+        var result = JSON.parse(response);
+        var u_pattern_1 = result.u_pattern_1;
+        var u_step2_1 = result.u_step2_1;	
+        console.log('u_pattern_1: ' + u_pattern_1);
+        console.log('u_step2_1: ' + u_step2_1);
+    });*/
+	
+    /*var util = new GlideAjax('x_846092_decisio_0.DecisionV2Utils');
+    util.addParam('sysparm_name', 'getRoleResult');
+    util.getXMLAnswer(function(){
+		var result = JSON.parse(response);
+		var u_result_pattern_1 = result.u_result_pattern_1;
+		console.log('u_result_pattern_1: ' + u_result_pattern_1);
+	});*/
+    /* util.getXML(parseResponse);
+    function parseResponse(response) {
         var answer = response.responseXML.documentElement.getAttribute('answer');
         if ("" != answer) {
 			var object = JSON.parse(answer);
@@ -32,27 +66,16 @@
             console.log('u_result_pattern_1: ' + object.u_result_pattern_1);
             console.log('u_result_step2_1: ' +object.u_result_step2_1);
         }
-    }
-
-	//Decisionテーブルの情報を参照
-	/*var inputs = { 
-		u_id: 'P00030'
-	};
-    var util = new GlideAjax('DecisionV2Utils');
-    util.addParam('sysparm_name', 'getDecisionResults');
-	util.addParam('inputs',JSON.stringify(inputs));
-    util.getXML(parseResponse);
-
-   function parseResponse(response) {
-        var answer = response.responseXML.documentElement.getAttribute('answer');
-        if ("" != answer) {alert(answer);
-			var object = JSON.parse(answer);
-            console.log('u_pattenrn_1: ' + object.u_pattenrn_1);
-            console.log('Step2_1: ' +object.step2_1);
-        }
     }*/
 
-	//sys_userの情報を取得
+    //Decisionテーブルの情報を参照
+    /*var inputs = { 
+    	u_id: 'P00030'
+    };*/
+
+	
+
+    //sys_userの情報を取得
 
     /*var util = new GlideAjax('DecisionV2Utils');
 	util.addParam('sysparm_name', 'getEmployeeInfo');
@@ -67,8 +90,8 @@
         console.log('email: ' + object.email);
         }
     }*/
-	
-	//decisionのsys_IDを取得
+
+    //decisionのsys_IDを取得
     /*var util = new GlideAjax('DecisionV2Utils');
 	util.addParam('sysparm_name', 'getSysId');
     util.addParam('name', 'decision_rule_v2');
@@ -79,51 +102,48 @@
 
 
 
-/*
-    //var amountValue = g_form.getValue('amounttype'); 
-    var grDecision = new GlideRecord('decision_rule_v2');
-    grDecision.addQuery('u_id', u_id); 
-   // grDecision.addQuery('u_status', true);
-    // 日期条件处理（字符串日期转GlideDate）
-   // grDecision.addQuery('u_effective_start', '<=',"javascript:gs.endOfToday()"); 
-   // grDecision.addQuery('u_effective_end', '>=', "javascript:gs.beginningOfToday()"); 
-    //grDecision.addQuery('u_effective_between', 'CONTAINS', sysDate); 
-    
-    // 金額分岐条件
-    //grDecision.addQuery('u_amount', amountValue);
-    
-    // 3. 执行查询并获取结果
-    grDecision.query();
-    if (grDecision.next()) {
-        // 获取目标字段值
-        var pattern1 = grDecision.getValue('u_pattern_1');
-        var step2_1 = grDecision.getValue('Step2-1');
-        var step2_2 = grDecision.getValue('Step2-2');        
-        // 将结果赋值到表单字段（根据实际需求调整，示例：赋值到隐藏字段）
-       // g_form.setValue('u_result_pattern1', pattern1);
-        //g_form.setValue('u_result_step2_1', step2_1);
+    /*
+        //var amountValue = g_form.getValue('amounttype'); 
+        var grDecision = new GlideRecord('decision_rule_v2');
+        grDecision.addQuery('u_id', u_id); 
+       // grDecision.addQuery('u_status', true);
+        // 日期条件处理（字符串日期转GlideDate）
+       // grDecision.addQuery('u_effective_start', '<=',"javascript:gs.endOfToday()"); 
+       // grDecision.addQuery('u_effective_end', '>=', "javascript:gs.beginningOfToday()"); 
+        //grDecision.addQuery('u_effective_between', 'CONTAINS', sysDate); 
         
-        // 调试日志（可删除）
-        console.log('u_pattenrn_1: ' + pattern1);
-        console.log('Step2-1: ' + step2_1);
-        console.log('Step2-2: ' + step2_2);
-    } else {
-        // 无匹配数据时的处理
-        //g_form.setValue('u_result_pattern1', '');
-        //g_form.setValue('u_result_step2_1', '');
-        console.log('条件に一致するデータが存在しません');
-    }*/
-}
-
-
-]]></script>
+        // 金額分岐条件
+        //grDecision.addQuery('u_amount', amountValue);
+        
+        // 3. 执行查询并获取结果
+        grDecision.query();
+        if (grDecision.next()) {
+            // 获取目标字段值
+            var pattern1 = grDecision.getValue('u_pattern_1');
+            var step2_1 = grDecision.getValue('Step2-1');
+            var step2_2 = grDecision.getValue('Step2-2');        
+            // 将结果赋值到表单字段（根据实际需求调整，示例：赋值到隐藏字段）
+           // g_form.setValue('u_result_pattern1', pattern1);
+            //g_form.setValue('u_result_step2_1', step2_1);
+            
+            // 调试日志（可删除）
+            console.log('u_pattenrn_1: ' + pattern1);
+            console.log('Step2-1: ' + step2_1);
+            console.log('Step2-2: ' + step2_2);
+        } else {
+            // 无匹配数据时的处理
+            //g_form.setValue('u_result_pattern1', '');
+            //g_form.setValue('u_result_step2_1', '');
+            console.log('条件に一致するデータが存在しません');
+        }*/
+}]]></script>
         <sys_class_name>catalog_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-01 07:00:51</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>cd649d260fd372102e576dd530d1b20a</sys_id>
-        <sys_mod_count>69</sys_mod_count>
+        <sys_mod_count>91</sys_mod_count>
         <sys_name>onLoad shounin test</sys_name>
         <sys_overrides/>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
@@ -131,7 +151,7 @@
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>catalog_script_client_cd649d260fd372102e576dd530d1b20a</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-06 03:03:04</sys_updated_on>
+        <sys_updated_on>2026-03-09 03:47:11</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_multi_result">
+    <sys_decision_multi_result action="INSERT_OR_UPDATE">
+        <decision_table display_value="decision_rule_v22">84db37800fa3fa102e576dd530d1b2ce</decision_table>
+        <label>pat_1: A, step2_1: b_001</label>
+        <result_elements/>
+        <sys_class_name>sys_decision_multi_result</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-06 11:03:09</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>524c73440fa3fa102e576dd530d1b21c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>pat_1: A, step2_1: b_001</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sys_decision_multi_result_524c73440fa3fa102e576dd530d1b21c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-06 11:03:09</sys_updated_on>
+    </sys_decision_multi_result>
+    <sys_variable_value action="delete_multiple" query="document_key=524c73440fa3fa102e576dd530d1b21c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>524c73440fa3fa102e576dd530d1b21c</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-06 11:03:09</sys_created_on>
+        <sys_id>1a4c73440fa3fa102e576dd530d1b21d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-06 11:03:09</sys_updated_on>
+        <value/>
+        <variable display_value="step2-2">524c33440fa3fa102e576dd530d1b2ea</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>524c73440fa3fa102e576dd530d1b21c</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-06 11:03:09</sys_created_on>
+        <sys_id>9e4c73440fa3fa102e576dd530d1b21c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-06 11:03:09</sys_updated_on>
+        <value>b_001</value>
+        <variable display_value="step2_1">0a4c33440fa3fa102e576dd530d1b2cc</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_decision_multi_result</document>
+        <document_key>524c73440fa3fa102e576dd530d1b21c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-06 11:03:09</sys_created_on>
+        <sys_id>d24c73440fa3fa102e576dd530d1b21d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-06 11:03:09</sys_updated_on>
+        <value>A</value>
+        <variable display_value="pat_1">ce4c33440fa3fa102e576dd530d1b2ad</variable>
+    </sys_variable_value>
+</record_update>

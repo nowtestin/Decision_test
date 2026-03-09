@@ -13,7 +13,7 @@
         <default_answer>false</default_answer>
         <input_table>var__m_sys_decision_input_fe3fc51d0f1b3a147409c9c530d1b215</input_table>
         <label>decision_rule_v2_1363</label>
-        <marked_for_deletion>false</marked_for_deletion>
+        <marked_for_deletion>true</marked_for_deletion>
         <order>1363</order>
         <sys_class_name>sys_decision_question</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -21,7 +21,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>edcc3a7e0f9f32102e576dd530d1b241</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>decision_rule_v2_1363</sys_name>
         <sys_overrides/>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
@@ -29,7 +29,7 @@
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>sys_decision_question_edcc3a7e0f9f32102e576dd530d1b241</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-02 09:13:21</sys_updated_on>
+        <sys_updated_on>2026-03-06 10:18:16</sys_updated_on>
     </sys_decision_question>
 </record_update>
 ]]></payload>
@@ -37,14 +37,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-02 09:13:16</sys_created_on>
         <sys_id>29cc3a7e0f9f32102e576dd530d1b246</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>decision_rule_v2_1363</sys_name>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
         <sys_policy/>
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>sys_metadata_link_29cc3a7e0f9f32102e576dd530d1b246</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-02 09:13:21</sys_updated_on>
+        <sys_updated_on>2026-03-06 10:18:16</sys_updated_on>
         <tablename>sys_decision_question</tablename>
     </sys_metadata_link>
 </record_update>

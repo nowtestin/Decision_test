@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition">
+    <sn_decision_table_decision_condition action="INSERT_OR_UPDATE">
+        <decision_input display_value="u_amount">f8475e450f63b2502e576dd530d1b2d8</decision_input>
+        <decision_table display_value="decision_rule_v23 delta">8c475ecd0f23b2502e576dd530d1b296</decision_table>
+        <default_operator>=</default_operator>
+        <description>画面金額分岐</description>
+        <field/>
+        <field_label/>
+        <field_parent_table/>
+        <label>u_amount</label>
+        <order>300</order>
+        <parent display_value="">4328bd050f6f72502e576dd530d1b248</parent>
+        <reference/>
+        <sys_class_name>sn_decision_table_decision_condition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-09 06:15:54</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>8c5792850f63b2502e576dd530d1b299</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sn_decision_table_decision_condition_8c5792850f63b2502e576dd530d1b299</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-09 06:15:54</sys_updated_on>
+        <type display_value="String">747127c1bf3320001875647fcf0739e0</type>
+    </sn_decision_table_decision_condition>
+</record_update>

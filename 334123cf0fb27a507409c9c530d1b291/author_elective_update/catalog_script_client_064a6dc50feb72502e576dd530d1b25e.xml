@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="catalog_script_client">
+    <catalog_script_client action="DELETE">
+        <active>true</active>
+        <applies_catalog>true</applies_catalog>
+        <applies_extended>false</applies_extended>
+        <applies_req_item>false</applies_req_item>
+        <applies_sc_task>false</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
+        <applies_to>item</applies_to>
+        <cat_item display_value="Copy of Decisionで承認者を設定_v3">704ae9c50feb72502e576dd530d1b29a</cat_item>
+        <cat_variable/>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>onLoad shounin test</name>
+        <order/>
+        <published_ref/>
+        <script><![CDATA[function onLoad() {
+
+    /*var util = new GlideAjax('x_846092_decisio_0.DecisionV2Utils');
+    util.addParam('sysparm_name', 'getRoleResult');
+    util.getXMLAnswer(function(){
+		var result = JSON.parse(response);
+		var u_result_pattern_1 = result.u_result_pattern_1;
+		console.log('u_result_pattern_1: ' + u_result_pattern_1);
+	});*/
+    /* util.getXML(parseResponse);
+    function parseResponse(response) {
+        var answer = response.responseXML.documentElement.getAttribute('answer');
+        if ("" != answer) {
+			var object = JSON.parse(answer);
+			alert('object' +JSON.stringify(object));
+            console.log('u_result_pattern_1: ' + object.u_result_pattern_1);
+            console.log('u_result_step2_1: ' +object.u_result_step2_1);
+        }
+    }*/
+
+    //Decisionテーブルの情報を参照
+    /*var inputs = { 
+    	u_id: 'P00030'
+    };*/
+//decision_rule_v22を取得
+/*    var util = new GlideAjax('x_846092_decisio_0.DecisionV2Utils');
+    util.addParam('sysparm_name', 'getDecisionv22_Results');
+    util.addParam('u_id', 'P00030');
+    //util.addParam('inputs',JSON.stringify(inputs));
+
+
+    util.getXMLAnswer(function(response) {
+        var result = JSON.parse(response);
+        var u_pat_1 = result.u_pat_1;
+        var u_step2_1 = result.u_step2_1;	
+        console.log('u_pat_1: ' + u_pat_1);
+        console.log('u_step2_1: ' + u_step2_1);
+    });*/
+//decision_rule_v21を取得
+    var util = new GlideAjax('x_846092_decisio_0.DecisionV2Utils');
+    util.addParam('sysparm_name', 'getDecisionv21_Results');
+    util.addParam('u_id', 'P00030');
+    util.addParam('u_amount', 'a');
+    //util.addParam('inputs',JSON.stringify(inputs));
+
+
+    util.getXMLAnswer(function(response) {
+        var result = JSON.parse(response);
+        var u_pattern_1 = result.u_pattern_1;
+        var u_step2_1 = result.u_step2_1;	
+        console.log('u_pattern_1: ' + u_pattern_1);
+        console.log('u_step2_1: ' + u_step2_1);
+    });
+	
+    /*util.getXML(parseResponse);
+   function parseResponse(response) {
+        var answer = response.responseXML.documentElement.getAttribute('answer');
+        if ("" != answer) {alert(answer);
+			var object = JSON.parse(answer);
+            console.log('u_pattenrn_1: ' + object.u_pattenrn_1);
+            console.log('Step2_1: ' +object.step2_1);
+        }
+    }*/
+
+    //sys_userの情報を取得
+
+    /*var util = new GlideAjax('DecisionV2Utils');
+	util.addParam('sysparm_name', 'getEmployeeInfo');
+    util.addParam('user','Abel Tuter');
+    util.getXML(parseResponse);
+
+    function parseResponse(response) {
+        var answer = response.responseXML.documentElement.getAttribute('answer');
+        if ("" != answer) {alert(answer);
+			var object = JSON.parse(answer);
+        console.log('name: ' + object.name);
+        console.log('email: ' + object.email);
+        }
+    }*/
+
+    //decisionのsys_IDを取得
+    /*var util = new GlideAjax('DecisionV2Utils');
+	util.addParam('sysparm_name', 'getSysId');
+    util.addParam('name', 'decision_rule_v2');
+
+    util.getXMLAnswer(function(response) {
+        alert('Decision Table sys_id: ' + response);
+    });*/
+
+
+
+    /*
+        //var amountValue = g_form.getValue('amounttype'); 
+        var grDecision = new GlideRecord('decision_rule_v2');
+        grDecision.addQuery('u_id', u_id); 
+       // grDecision.addQuery('u_status', true);
+        // 日期条件处理（字符串日期转GlideDate）
+       // grDecision.addQuery('u_effective_start', '<=',"javascript:gs.endOfToday()"); 
+       // grDecision.addQuery('u_effective_end', '>=', "javascript:gs.beginningOfToday()"); 
+        //grDecision.addQuery('u_effective_between', 'CONTAINS', sysDate); 
+        
+        // 金額分岐条件
+        //grDecision.addQuery('u_amount', amountValue);
+        
+        // 3. 执行查询并获取结果
+        grDecision.query();
+        if (grDecision.next()) {
+            // 获取目标字段值
+            var pattern1 = grDecision.getValue('u_pattern_1');
+            var step2_1 = grDecision.getValue('Step2-1');
+            var step2_2 = grDecision.getValue('Step2-2');        
+            // 将结果赋值到表单字段（根据实际需求调整，示例：赋值到隐藏字段）
+           // g_form.setValue('u_result_pattern1', pattern1);
+            //g_form.setValue('u_result_step2_1', step2_1);
+            
+            // 调试日志（可删除）
+            console.log('u_pattenrn_1: ' + pattern1);
+            console.log('Step2-1: ' + step2_1);
+            console.log('Step2-2: ' + step2_2);
+        } else {
+            // 无匹配数据时的处理
+            //g_form.setValue('u_result_pattern1', '');
+            //g_form.setValue('u_result_step2_1', '');
+            console.log('条件に一致するデータが存在しません');
+        }*/
+}]]></script>
+        <sys_class_name>catalog_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-09 02:59:10</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>064a6dc50feb72502e576dd530d1b25e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onLoad shounin test</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>catalog_script_client_064a6dc50feb72502e576dd530d1b25e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-09 02:59:10</sys_updated_on>
+        <table/>
+        <type>onLoad</type>
+        <ui_type>10</ui_type>
+        <va_supported>true</va_supported>
+        <variable_set/>
+        <view/>
+    </catalog_script_client>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</application>
+        <file_path/>
+        <instance_id>b0e25b9e3bdf7e14986d048aa4e45a4c</instance_id>
+        <instance_name>dev364288</instance_name>
+        <name>catalog_script_client_064a6dc50feb72502e576dd530d1b25e</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update sys_domain="global" table="catalog_script_client"&gt;&lt;catalog_script_client action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;applies_catalog&gt;true&lt;/applies_catalog&gt;&lt;applies_extended&gt;false&lt;/applies_extended&gt;&lt;applies_req_item&gt;false&lt;/applies_req_item&gt;&lt;applies_sc_task&gt;false&lt;/applies_sc_task&gt;&lt;applies_target_record&gt;false&lt;/applies_target_record&gt;&lt;applies_to&gt;item&lt;/applies_to&gt;&lt;cat_item display_value="Copy of Decisionで承認者を設定_v3"&gt;704ae9c50feb72502e576dd530d1b29a&lt;/cat_item&gt;&lt;cat_variable/&gt;&lt;condition/&gt;&lt;description/&gt;&lt;field/&gt;&lt;global&gt;true&lt;/global&gt;&lt;isolate_script&gt;true&lt;/isolate_script&gt;&lt;messages/&gt;&lt;name&gt;onLoad shounin test&lt;/name&gt;&lt;order/&gt;&lt;published_ref/&gt;&lt;script&gt;&lt;![CDATA[function onLoad() {
+
+    /*var util = new GlideAjax('x_846092_decisio_0.DecisionV2Utils');
+    util.addParam('sysparm_name', 'getRoleResult');
+    util.getXMLAnswer(function(){
+		var result = JSON.parse(response);
+		var u_result_pattern_1 = result.u_result_pattern_1;
+		console.log('u_result_pattern_1: ' + u_result_pattern_1);
+	});*/
+    /* util.getXML(parseResponse);
+    function parseResponse(response) {
+        var answer = response.responseXML.documentElement.getAttribute('answer');
+        if ("" != answer) {
+			var object = JSON.parse(answer);
+			alert('object' +JSON.stringify(object));
+            console.log('u_result_pattern_1: ' + object.u_result_pattern_1);
+            console.log('u_result_step2_1: ' +object.u_result_step2_1);
+        }
+    }*/
+
+    //Decisionテーブルの情報を参照
+    /*var inputs = { 
+    	u_id: 'P00030'
+    };*/
+//decision_rule_v22を取得
+/*    var util = new GlideAjax('x_846092_decisio_0.DecisionV2Utils');
+    util.addParam('sysparm_name', 'getDecisionv22_Results');
+    util.addParam('u_id', 'P00030');
+    //util.addParam('inputs',JSON.stringify(inputs));
+
+
+    util.getXMLAnswer(function(response) {
+        var result = JSON.parse(response);
+        var u_pat_1 = result.u_pat_1;
+        var u_step2_1 = result.u_step2_1;	
+        console.log('u_pat_1: ' + u_pat_1);
+        console.log('u_step2_1: ' + u_step2_1);
+    });*/
+//decision_rule_v21を取得
+    var util = new GlideAjax('x_846092_decisio_0.DecisionV2Utils');
+    util.addParam('sysparm_name', 'getDecisionv21_Results');
+    util.addParam('u_id', 'P00030');
+    util.addParam('u_amount', 'a');
+    //util.addParam('inputs',JSON.stringify(inputs));
+
+
+    util.getXMLAnswer(function(response) {
+        var result = JSON.parse(response);
+        var u_pattern_1 = result.u_pattern_1;
+        var u_step2_1 = result.u_step2_1;	
+        console.log('u_pattern_1: ' + u_pattern_1);
+        console.log('u_step2_1: ' + u_step2_1);
+    });
+	
+    /*util.getXML(parseResponse);
+   function parseResponse(response) {
+        var answer = response.responseXML.documentElement.getAttribute('answer');
+        if ("" != answer) {alert(answer);
+			var object = JSON.parse(answer);
+            console.log('u_pattenrn_1: ' + object.u_pattenrn_1);
+            console.log('Step2_1: ' +object.step2_1);
+        }
+    }*/
+
+    //sys_userの情報を取得
+
+    /*var util = new GlideAjax('DecisionV2Utils');
+	util.addParam('sysparm_name', 'getEmployeeInfo');
+    util.addParam('user','Abel Tuter');
+    util.getXML(parseResponse);
+
+    function parseResponse(response) {
+        var answer = response.responseXML.documentElement.getAttribute('answer');
+        if ("" != answer) {alert(answer);
+			var object = JSON.parse(answer);
+        console.log('name: ' + object.name);
+        console.log('email: ' + object.email);
+        }
+    }*/
+
+    //decisionのsys_IDを取得
+    /*var util = new GlideAjax('DecisionV2Utils');
+	util.addParam('sysparm_name', 'getSysId');
+    util.addParam('name', 'decision_rule_v2');
+
+    util.getXMLAnswer(function(response) {
+        alert('Decision Table sys_id: ' + response);
+    });*/
+
+
+
+    /*
+        //var amountValue = g_form.getValue('amounttype'); 
+        var grDecision = new GlideRecord('decision_rule_v2');
+        grDecision.addQuery('u_id', u_id); 
+       // grDecision.addQuery('u_status', true);
+        // 日期条件处理（字符串日期转GlideDate）
+       // grDecision.addQuery('u_effective_start', '&lt;=',"javascript:gs.endOfToday()"); 
+       // grDecision.addQuery('u_effective_end', '&gt;=', "javascript:gs.beginningOfToday()"); 
+        //grDecision.addQuery('u_effective_between', 'CONTAINS', sysDate); 
+        
+        // 金額分岐条件
+        //grDecision.addQuery('u_amount', amountValue);
+        
+        // 3. 执行查询并获取结果
+        grDecision.query();
+        if (grDecision.next()) {
+            // 获取目标字段值
+            var pattern1 = grDecision.getValue('u_pattern_1');
+            var step2_1 = grDecision.getValue('Step2-1');
+            var step2_2 = grDecision.getValue('Step2-2');        
+            // 将结果赋值到表单字段（根据实际需求调整，示例：赋值到隐藏字段）
+           // g_form.setValue('u_result_pattern1', pattern1);
+            //g_form.setValue('u_result_step2_1', step2_1);
+            
+            // 调试日志（可删除）
+            console.log('u_pattenrn_1: ' + pattern1);
+            console.log('Step2-1: ' + step2_1);
+            console.log('Step2-2: ' + step2_2);
+        } else {
+            // 无匹配数据时的处理
+            //g_form.setValue('u_result_pattern1', '');
+            //g_form.setValue('u_result_step2_1', '');
+            console.log('条件に一致するデータが存在しません');
+        }*/
+}]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;catalog_script_client&lt;/sys_class_name&gt;&lt;sys_created_by&gt;admin&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2026-03-09 02:59:10&lt;/sys_created_on&gt;&lt;sys_domain&gt;global&lt;/sys_domain&gt;&lt;sys_domain_path&gt;/&lt;/sys_domain_path&gt;&lt;sys_id&gt;064a6dc50feb72502e576dd530d1b25e&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;onLoad shounin test&lt;/sys_name&gt;&lt;sys_overrides/&gt;&lt;sys_package display_value="Decision_test" source="x_846092_decisio_0"&gt;334123cf0fb27a507409c9c530d1b291&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="Decision_test"&gt;334123cf0fb27a507409c9c530d1b291&lt;/sys_scope&gt;&lt;sys_update_name&gt;catalog_script_client_064a6dc50feb72502e576dd530d1b25e&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;admin&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2026-03-09 02:59:10&lt;/sys_updated_on&gt;&lt;table/&gt;&lt;type&gt;onLoad&lt;/type&gt;&lt;ui_type&gt;10&lt;/ui_type&gt;&lt;va_supported&gt;true&lt;/va_supported&gt;&lt;variable_set/&gt;&lt;view/&gt;&lt;/catalog_script_client&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-217827381</payload_hash>
+        <record_name>onLoad shounin test</record_name>
+        <reverted_from/>
+        <source>5ff3dd620fd372102e576dd530d1b27c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-09 02:59:10</sys_created_on>
+        <sys_id>4e4a6dc50feb72502e576dd530d1b26b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cd088c78f0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-09 02:59:10</sys_updated_on>
+        <type>Catalog Client Scripts</type>
+        <update_guid>0e4a6dc509eb7250955e9bba0f409f6a</update_guid>
+        <update_guid_history>0e4a6dc509eb7250955e9bba0f409f6a:-217827381</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="onLoad shounin test">f4636a8d0fa3b2502e576dd530d1b20a</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-09 07:08:40</sys_created_on>
+        <sys_db_object display_value="" name="catalog_script_client">catalog_script_client</sys_db_object>
+        <sys_id>32bb46cc0c75433ab936b3aaebc76064</sys_id>
+        <sys_metadata>064a6dc50feb72502e576dd530d1b25e</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onLoad shounin test</sys_name>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_scope_delete display_value="">b26603257afd472c9f81ad439a022e90</sys_scope_delete>
+        <sys_update_name>catalog_script_client_064a6dc50feb72502e576dd530d1b25e</sys_update_name>
+        <sys_update_version display_value="catalog_script_client_064a6dc50feb72502e576dd530d1b25e">4e4a6dc50feb72502e576dd530d1b26b</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-09 07:08:40</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

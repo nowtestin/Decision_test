@@ -3,7 +3,7 @@
         <directory>update</directory>
         <documentkey>1e2f82450f23b2502e576dd530d1b2ff</documentkey>
         <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_decision_question">
-    <sys_decision_question action="INSERT_OR_UPDATE">
+    <sys_decision_question action="DELETE">
         <active>true</active>
         <answer>a32f06450f23b2502e576dd530d1b209</answer>
         <condition table="var__m_sys_decision_input_9e75a9090fab72502e576dd530d1b24d">u_id=e74e8a810f23b2502e576dd530d1b2b8^u_effective_betweenBETWEENjavascript:gs.dateGenerate('2026-03-01','start')@javascript:gs.dateGenerate('2026-03-31','end')^u_amount=b^EQ<item display_table="sc_cat_item" display_value="Decisionで承認者を設定_v24" endquery="false" field="u_id" goto="false" newquery="false" operator="=" or="false" value="e74e8a810f23b2502e576dd530d1b2b8"/>
@@ -39,14 +39,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-09 05:40:17</sys_created_on>
         <sys_id>d22fc2450f23b2502e576dd530d1b201</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_name>decision_rule_v23_130</sys_name>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
         <sys_policy/>
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>sys_metadata_link_d22fc2450f23b2502e576dd530d1b201</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-09 06:16:39</sys_updated_on>
+        <sys_updated_on>2026-03-09 07:31:39</sys_updated_on>
         <tablename>sys_decision_question</tablename>
     </sys_metadata_link>
 </record_update>

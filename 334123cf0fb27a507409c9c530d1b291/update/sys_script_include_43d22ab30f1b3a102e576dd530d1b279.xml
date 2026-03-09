@@ -14,10 +14,10 @@ DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
     //カスタムDecisionテーブルの情報を参照
     getDecisionv23_Results: function() {
-            var currentDate = new GlideDate();
-            var u_id = this.getParameter('u_id');
-            var u_effective_between = currentDate;
-            var u_amount = this.getParameter('u_amount');
+        var currentDate = new GlideDate();
+        var u_id = this.getParameter('u_id');
+        var u_effective_between = currentDate;
+        var u_amount = this.getParameter('u_amount');
         try {
             var inputs = {};
             inputs['u_id'] = u_id;
@@ -27,29 +27,38 @@ DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
             gs.info("input1" + JSON.stringify(inputs));
             var dtAPI = new sn_dt.DecisionTableAPI();
             //カスタムDecisionテーブル(decision_rule_v23)のsys_id
-            var response = dtAPI.getDecision('9e75a9090fab72502e576dd530d1b24d', inputs); 
+            var response = dtAPI.getDecision('9e75a9090fab72502e576dd530d1b24d', inputs);
             gs.info("response1" + JSON.stringify(response));
 
             var result_elements = response.result_elements;
             gs.info("result_elements1" + JSON.stringify(result_elements));
-			return JSON.stringify(result_elements);
+            var result = {};
+            for (var fieldName in result_elements) {
+                // 自身のプロパティのみを対象
+                var fieldValue = result_elements[fieldName]; // 項目値を取得
+				
+                // 設定値有のResult項目を動態的に取得、オブジェクトに格納して、リターンする
+				if (fieldValue !== null && fieldValue !='') {
+				result[fieldName] = fieldValue.toString();
+				}
+
+            }
+            gs.info("result" + JSON.stringify(result));
+            return JSON.stringify(result);
+
+            //return JSON.stringify(result_elements);
             /*var result = {
                 'u_pattern_1': result_elements.u_pattern_1.getValue(),
                 'u_step2_1': result_elements.u_step2_1.getValue(),
                 'u_step2_2': result_elements.u_step2_2.getValue(),
             };gs.info("result" + JSON.stringify(result));
             return JSON.stringify(result);*/
-			/*var allResults = {};
-            if (result_elements) {
-                var fieldNames = result_elements.getFieldNames(); // 全フィールド名を取得
-                for (var i = 0; i < fieldNames.length; i++) {
-                    var fieldName = fieldNames[i];
-                    //allResults[fieldName] = result_elements.getValue(fieldName); // 各フィールドの値を格納
-					allResults[fieldName] = result_elements.fieldName.getValue();
-                }
-            }
-            gs.info("All DecisionTable Results: " + JSON.stringify(allResults));
-            return JSON.stringify(allResults);*/
+
+            /*var result = {};
+            result.u_pattern_1 = result_elements.u_pattern_1.getValue();
+            result.u_step2_1 = result_elements.u_step2_1.getValue();
+            result.u_step2_2 = result_elements.u_step2_2.getValue();
+            return JSON.stringify(result);*/
 
         } catch (e) {
             gs.error("Couldn't run this script Error: " + e);
@@ -60,10 +69,10 @@ DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
     //カスタムDecisionテーブルの情報を参照
     getDecisionv21_Results: function() {
-            var currentDate = new GlideDate();
-            var u_id = this.getParameter('u_id');
-            var u_effective_between = currentDate;
-            var u_amount = this.getParameter('u_amount');
+        var currentDate = new GlideDate();
+        var u_id = this.getParameter('u_id');
+        var u_effective_between = currentDate;
+        var u_amount = this.getParameter('u_amount');
         try {
             var inputs = {};
             inputs['u_id'] = u_id;
@@ -73,7 +82,7 @@ DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
             gs.info("input" + JSON.stringify(inputs));
             var dtAPI = new sn_dt.DecisionTableAPI();
             //カスタムDecisionテーブル(decision_rule_v21)のsys_id
-            var response = dtAPI.getDecision('d6b5d50d0f2b72502e576dd530d1b28e', inputs); 
+            var response = dtAPI.getDecision('d6b5d50d0f2b72502e576dd530d1b28e', inputs);
             gs.info("response" + JSON.stringify(response));
             var result_elements = response.result_elements;
             gs.info("result_elements" + JSON.stringify(result_elements));
@@ -91,16 +100,16 @@ DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 
     //カスタムDecisionテーブルの情報を参照
     getDecisionv22_Results: function() {
-            //var currentDate = new GlideDate();
-            var u_id = this.getParameter('u_id');
-            gs.info("u_id" + u_id);
+        //var currentDate = new GlideDate();
+        var u_id = this.getParameter('u_id');
+        gs.info("u_id" + u_id);
         try {
             var inputs = {};
             inputs['u_id'] = u_id;
             gs.info("input" + JSON.stringify(inputs));
             var dtAPI = new sn_dt.DecisionTableAPI();
             //カスタムDecisionテーブルのsys_id
-            var response = dtAPI.getDecision('84db37800fa3fa102e576dd530d1b2ce', inputs); 
+            var response = dtAPI.getDecision('84db37800fa3fa102e576dd530d1b2ce', inputs);
             gs.info("response" + JSON.stringify(response));
             var result_elements = response.result_elements;
             //var response = dtAPI.getAnswers(dtSysId);
@@ -165,13 +174,13 @@ DecisionV2Utils.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-03-05 09:55:08</sys_created_on>
         <sys_id>43d22ab30f1b3a102e576dd530d1b279</sys_id>
-        <sys_mod_count>54</sys_mod_count>
+        <sys_mod_count>112</sys_mod_count>
         <sys_name>DecisionV2Utils</sys_name>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
         <sys_policy>read</sys_policy>
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>sys_script_include_43d22ab30f1b3a102e576dd530d1b279</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-09 07:05:55</sys_updated_on>
+        <sys_updated_on>2026-03-09 10:37:52</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -19,15 +19,15 @@
         <order/>
         <published_ref/>
         <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
-   if (isLoading || newValue == '') {
+  /* if (isLoading || newValue == '') {
       return;
-   }
-    var catItem = g_form.getUniqueValue();
+   }*/
+    var catItem = g_form.getUniqueValue();//帳票のSys_idを取得
     var util = new GlideAjax('x_846092_decisio_0.DecisionV2Utils');
     util.addParam('sysparm_name', 'getDecisionv23_Results');
 	//DecisionテーブルのInputの変数を設定
     util.addParam('u_id', catItem);
-    util.addParam('u_amount', g_form.getValue('u_amount'));
+    util.addParam('u_amount', g_form.getValue('u_amount'));//画面の金額
 
     util.getXMLAnswer(function(response) {
         var result = JSON.parse(response);
@@ -47,7 +47,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>815e42c10f23b2502e576dd530d1b280</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>onChange deciision v24</sys_name>
         <sys_overrides/>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
@@ -55,7 +55,7 @@
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>catalog_script_client_815e42c10f23b2502e576dd530d1b280</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-09 05:45:27</sys_updated_on>
+        <sys_updated_on>2026-03-10 02:02:12</sys_updated_on>
         <table/>
         <type>onChange</type>
         <ui_type>10</ui_type>

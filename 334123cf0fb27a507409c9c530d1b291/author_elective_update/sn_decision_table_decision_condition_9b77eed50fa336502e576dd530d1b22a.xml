@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition">
+    <sn_decision_table_decision_condition action="DELETE">
+        <decision_input display_value="u_amount">2977ead50fa336502e576dd530d1b239</decision_input>
+        <decision_table display_value="decision_rule_v23 delta">09776ad50fa336502e576dd530d1b2b1</decision_table>
+        <default_operator>=</default_operator>
+        <description>画面金額分岐</description>
+        <field/>
+        <field_label/>
+        <field_parent_table/>
+        <label>u_amount</label>
+        <order>300</order>
+        <parent display_value="">4328bd050f6f72502e576dd530d1b248</parent>
+        <reference/>
+        <sys_class_name>sn_decision_table_decision_condition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-10 02:05:04</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>9b77eed50fa336502e576dd530d1b22a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_update_name>sn_decision_table_decision_condition_9b77eed50fa336502e576dd530d1b22a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-10 02:05:04</sys_updated_on>
+        <type display_value="String">747127c1bf3320001875647fcf0739e0</type>
+    </sn_decision_table_decision_condition>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</application>
+        <file_path/>
+        <instance_id>b0e25b9e3bdf7e14986d048aa4e45a4c</instance_id>
+        <instance_name>dev364288</instance_name>
+        <name>sn_decision_table_decision_condition_9b77eed50fa336502e576dd530d1b22a</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_decision_table_decision_condition"><sn_decision_table_decision_condition action="INSERT_OR_UPDATE"><decision_input display_value="u_amount">2977ead50fa336502e576dd530d1b239</decision_input><decision_table display_value="decision_rule_v23 delta">09776ad50fa336502e576dd530d1b2b1</decision_table><default_operator>=</default_operator><description>画面金額分岐</description><field/><field_label/><field_parent_table/><label>u_amount</label><order>300</order><parent display_value="">4328bd050f6f72502e576dd530d1b248</parent><reference/><sys_class_name>sn_decision_table_decision_condition</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2026-03-10 02:05:04</sys_created_on><sys_domain>global</sys_domain><sys_id>9b77eed50fa336502e576dd530d1b22a</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package><sys_policy/><sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope><sys_update_name>sn_decision_table_decision_condition_9b77eed50fa336502e576dd530d1b22a</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2026-03-10 02:05:04</sys_updated_on><type display_value="String">747127c1bf3320001875647fcf0739e0</type></sn_decision_table_decision_condition></record_update>]]></payload>
+        <payload_hash>-375698415</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>5ff3dd620fd372102e576dd530d1b27c</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-10 02:05:04</sys_created_on>
+        <sys_id>df77eed50fa336502e576dd530d1b22d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19cd57d9bc10000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-10 02:05:04</sys_updated_on>
+        <type>Decision Condition</type>
+        <update_guid>9f77eed52ba33650a91824bd2cb3642c</update_guid>
+        <update_guid_history>9f77eed52ba33650a91824bd2cb3642c:-375698415</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">a3b7e6190fa336502e576dd530d1b2f5</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-03-10 02:06:11</sys_created_on>
+        <sys_db_object display_value="" name="sn_decision_table_decision_condition">sn_decision_table_decision_condition</sys_db_object>
+        <sys_id>a420bcc7022c49e69447e6f747a18bd1</sys_id>
+        <sys_metadata>9b77eed50fa336502e576dd530d1b22a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
+        <sys_scope_delete display_value="">b26603257afd472c9f81ad439a022e90</sys_scope_delete>
+        <sys_update_name>sn_decision_table_decision_condition_9b77eed50fa336502e576dd530d1b22a</sys_update_name>
+        <sys_update_version display_value="sn_decision_table_decision_condition_9b77eed50fa336502e576dd530d1b22a">df77eed50fa336502e576dd530d1b22d</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-03-10 02:06:11</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

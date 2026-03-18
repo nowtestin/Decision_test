@@ -27,7 +27,7 @@
     util.addParam('sysparm_name', 'getDecisionv23_Results');
     //DecisionテーブルのInputの変数を設定
     util.addParam('u_id', catItem);
-    util.addParam('u_amount', '');
+    //util.addParam('u_amount', '');
 
     util.getXMLAnswer(function(response) {
         var result = JSON.parse(response);
@@ -48,7 +48,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>d4766e150fa336502e576dd530d1b27d</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name>onLoad deciision v25</sys_name>
         <sys_overrides/>
         <sys_package display_value="Decision_test" source="x_846092_decisio_0">334123cf0fb27a507409c9c530d1b291</sys_package>
@@ -56,7 +56,7 @@
         <sys_scope display_value="Decision_test">334123cf0fb27a507409c9c530d1b291</sys_scope>
         <sys_update_name>catalog_script_client_d4766e150fa336502e576dd530d1b27d</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-03-12 05:07:57</sys_updated_on>
+        <sys_updated_on>2026-03-18 01:16:28</sys_updated_on>
         <table/>
         <type>onLoad</type>
         <ui_type>10</ui_type>
